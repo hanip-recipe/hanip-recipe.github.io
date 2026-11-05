@@ -19,6 +19,9 @@ const MIN_COLLECTION = 3;
 const BASIC = '소금 맛소금 후추 후춧가루 설탕 간장 진간장 국간장 양조간장 식용유 참기름 들기름 다진마늘 마늘 간마늘 고춧가루 고추장 된장 식초 물 깨 통깨 참깨 깨소금 미림 맛술 올리고당 물엿 굴소스'.split(' ');
 const isBasic = (n) => BASIC.some((b) => n === b || (b.length > 1 && n.endsWith(b))); // '물'은 콩나물과 헷갈리지 않게 그대로일 때만
 const coupangSearch = (q) => `https://www.coupang.com/np/search?q=${encodeURIComponent(q)}`;
+// 도구 이름 → 쿠팡 파트너스 링크 표 (data/tool-links.json, 앱 index.html 도 같은 표를 씀). 표에 없으면 일반 검색 주소
+const TOOL_LINKS = (() => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, 'data/tool-links.json'), 'utf8')); } catch { return {}; } })();
+const toolUrl = (t) => TOOL_LINKS[t] || coupangSearch(t);
 const SPONSORED = 'target="_blank" rel="sponsored nofollow noopener"';
 
 // ───────── 작은 도구들 ─────────
@@ -370,7 +373,7 @@ ${buyable.map((i) => { const home = isBasic(i.name); return `<li><label><input t
 <p class="note">${esc(AFF_NOTE)}</p>
 </section>` : '';
   const toolBox = tools.length ? `<section class="box" id="tools"><h2>🍳 이 레시피에 쓴 도구</h2>
-<ul class="tools">${tools.map((t) => `<li><a href="${esc(coupangSearch(t))}" ${SPONSORED}>${esc(t)} <span>쿠팡</span></a></li>`).join('')}</ul>
+<ul class="tools">${tools.map((t) => `<li><a href="${esc(toolUrl(t))}" ${SPONSORED}>${esc(t)} <span>쿠팡</span></a></li>`).join('')}</ul>
 </section>` : '';
   const body = `${crumbs(rel, trail)}
 <article>

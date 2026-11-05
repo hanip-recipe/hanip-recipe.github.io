@@ -13,6 +13,7 @@
 | `collections/<이름>/index.html`, `collections/index.html` | `node tools/seo.mjs` | 모음글 (만원 이하 가성비, 20분 이내, 혼밥, 술안주, 다이어트, 해장·국물, 야식, 도시락, 에어프라이어, 전자레인지, 연말 홈파티, 두부·버섯 요리 등) |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | `node tools/seo.mjs` | 검색엔진·AI 검색용 안내 파일 |
 | `index.html` 맨 아래 `<!-- seo:start -->` ~ `<!-- seo:end -->` | `node tools/seo.mjs` | 첫 화면에 넣는 전체 레시피·모음글 링크 |
+| `data/tool-links.json` | 직접 관리 (쿠팡 딥링크 API로 변환) | 도구 이름 → 쿠팡 파트너스 링크 표. 레시피 페이지와 앱 화면의 «🍳 이 레시피에 쓴 도구» 박스가 씀. 표에 없는 도구는 일반 쿠팡 검색 주소로 나감 — 새 도구가 생기면 표에 더하세요 |
 
 ## 검색 노출용 페이지가 하는 일
 
