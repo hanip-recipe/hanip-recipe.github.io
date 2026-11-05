@@ -31,6 +31,7 @@
 node tools/seo.mjs
 ```
 
+- 데이터만 따로 검사하려면 `node tools/check-data.mjs` (모든 id에 `r/<id>.json`이 있는지, 필드가 빠지지 않았는지, 목록과 상세 값이 맞는지 확인).
 - 여러 번 돌려도 결과가 같습니다. `recipes/`, `collections/` 폴더는 매번 지우고 새로 만듭니다(직접 고친 내용은 사라짐).
 - 끝에 검사(`tools/check-seo.mjs`)가 자동으로 돌아 JSON-LD 오류, 깨진 링크, sitemap 누락, 비밀 값(열쇠·토큰)을 확인합니다. "✅ 문제 없음" 이 나와야 올리세요. 검사만 따로 돌리려면 `node tools/check-seo.mjs`.
 - `.env` 같은 열쇠 파일은 이 저장소에 넣지 마세요.
