@@ -10,7 +10,7 @@
 | `index.html`, `recipes.json`, `r/<id>.json`, `.nojekyll` | 내 컴퓨터의 `build.mjs` | 앱 화면과 레시피 데이터 |
 | `recipes/<id>/index.html` | `node tools/seo.mjs` | 레시피별 검색용 페이지 (자바스크립트 없이 본문이 다 들어 있음) |
 | `recipes/index.html` | `node tools/seo.mjs` | 전체 레시피 목록 |
-| `collections/<이름>/index.html`, `collections/index.html` | `node tools/seo.mjs` | 모음글 (만원 이하 가성비, 20분 이내, 혼밥, 술안주, 다이어트, 해장·국물, 야식, 두부·버섯 요리 등) |
+| `collections/<이름>/index.html`, `collections/index.html` | `node tools/seo.mjs` | 모음글 (만원 이하 가성비, 20분 이내, 혼밥, 술안주, 다이어트, 해장·국물, 야식, 도시락, 에어프라이어, 전자레인지, 연말 홈파티, 두부·버섯 요리 등) |
 | `sitemap.xml`, `robots.txt`, `llms.txt` | `node tools/seo.mjs` | 검색엔진·AI 검색용 안내 파일 |
 | `index.html` 맨 아래 `<!-- seo:start -->` ~ `<!-- seo:end -->` | `node tools/seo.mjs` | 첫 화면에 넣는 전체 레시피·모음글 링크 |
 
