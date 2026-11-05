@@ -57,6 +57,22 @@ tfoot td{font-weight:800;border:0}
 .total{color:var(--point);font-size:17px}
 .buy{font-size:12px;color:#fff;background:#e52528;padding:2px 8px;border-radius:6px;text-decoration:none;white-space:nowrap}
 .note{color:var(--sub);font-size:12px;margin:8px 0 0}
+.aff{background:#fff8e1;border:1px solid #ffe08a;color:#7a5200;border-radius:12px;padding:8px 12px;font-size:13px;line-height:1.5;margin:6px 0 10px}
+.shop ul{list-style:none;margin:0;padding:0}
+.shop li{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--line)}
+.shop li:last-child{border:0}
+.shop label{flex:1;min-width:0;display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;cursor:pointer}
+.shop input{flex:none;width:18px;height:18px;margin:0;accent-color:var(--point)}
+.shop small{color:var(--sub);font-size:12px}
+.shop.js ul:first-of-type .go{display:none}
+.shop .picked{margin-top:10px;background:var(--soft);border-radius:12px;padding:4px 12px}
+.shop .picked li{justify-content:space-between}
+.shop button{margin-top:12px;width:100%;padding:12px;border:0;border-radius:12px;background:#e52528;color:#fff;font:inherit;font-weight:700;font-size:15px;cursor:pointer}
+.shop button:disabled{opacity:.5;cursor:default}
+.shop .sel{display:flex;gap:14px;font-size:13px;margin-top:8px}.shop .sel a{color:var(--point);text-decoration:none;font-weight:600}
+ul.tools{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+ul.tools a{display:inline-flex;align-items:center;gap:6px;background:var(--soft);border-radius:999px;padding:6px 12px;font-size:14px;text-decoration:none}
+ul.tools a span{font-size:12px;color:#fff;background:#e52528;border-radius:6px;padding:1px 6px}
 ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
 ol.steps li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);counter-increment:s}
 ol.steps li:last-child{border:0}
@@ -103,6 +119,7 @@ th,td{padding:8px 4px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 <ol class="crumb"><li><a href="../../">홈</a></li><li><a href="../">전체 레시피</a></li><li aria-current="page">스팸 마요 주먹밥</li></ol>
 <article>
 <h1>스팸 마요 주먹밥 레시피</h1>
+<p class="aff">🛒 쿠팡 파트너스 링크가 있어요 — 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 <p class="lead">잘게 썬 스팸과 채소를 간장·설탕으로 볶고 스크램블 계란, 마요네즈, 김가루와 함께 밥에 섞어 한입 크기로 뭉치는 도시락용 주먹밥.</p>
 <ul class="sum3">
   <li>⏱ 조리 시간 <b>약 20분</b> · 🍽 <b>2인분</b> 기준</li>
@@ -130,6 +147,24 @@ th,td{padding:8px 4px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 <tr><td>구운 김</td><td>1봉지</td><td class="n">1,000원</td><td class="n"><a class="buy" href="https://link.coupang.com/a/iqytv0zbMW" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></td></tr>
 </tbody><tfoot><tr><td colspan="2">합계</td><td class="n total" colspan="2">약 7,780원</td></tr></tfoot></table>
 <p class="note">가격은 AI가 추정한 마트 기준 대략값이에요. 인분을 바꾸려면 <a href="../../index.html#/r/uAm6L_6g7pY">앱에서 인분 조절</a>을 써 보세요.</p>
+</section>
+<section class="box shop" id="shopping"><h2>🧺 이 레시피 장보기 한 번에</h2>
+<p class="note" style="margin:0 0 6px">필요한 재료를 고르세요. 소금·간장 같은 기본 양념은 «집에 있음»으로 빼 두었어요.</p>
+<ul>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqxBUodXK8" data-name="스팸" checked> 스팸 <small>150g</small></label><a class="buy go" href="https://link.coupang.com/a/iqxBUodXK8" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwwSBVMUm" data-name="양파" checked> 양파 <small>0.25개</small></label><a class="buy go" href="https://link.coupang.com/a/iqwwSBVMUm" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwQ0aoOt2" data-name="당근" checked> 당근 <small>약간</small></label><a class="buy go" href="https://link.coupang.com/a/iqwQ0aoOt2" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwDAd5Liu" data-name="청양고추" checked> 청양고추 <small>3개</small></label><a class="buy go" href="https://link.coupang.com/a/iqwDAd5Liu" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwqbsbdim" data-name="계란" checked> 계란 <small>2개</small></label><a class="buy go" href="https://link.coupang.com/a/iqwqbsbdim" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwjtUy66m" data-name="식용유"> 식용유 <small>약간 · 집에 있음</small></label><a class="buy go" href="https://link.coupang.com/a/iqwjtUy66m" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwqa1LJbo" data-name="진간장"> 진간장 <small>2큰술 · 집에 있음</small></label><a class="buy go" href="https://link.coupang.com/a/iqwqa1LJbo" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwDz020ku" data-name="설탕"> 설탕 <small>0.5큰술 · 집에 있음</small></label><a class="buy go" href="https://link.coupang.com/a/iqwDz020ku" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqxa50qGU8" data-name="밥" checked> 밥 <small>2공기</small></label><a class="buy go" href="https://link.coupang.com/a/iqxa50qGU8" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwqbQikkS" data-name="마요네즈" checked> 마요네즈 <small>1.5큰술</small></label><a class="buy go" href="https://link.coupang.com/a/iqwqbQikkS" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwjs7szRs" data-name="참기름"> 참기름 <small>1큰술 · 집에 있음</small></label><a class="buy go" href="https://link.coupang.com/a/iqwjs7szRs" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqwQZ60pWe" data-name="깨소금"> 깨소금 <small>1큰술 · 집에 있음</small></label><a class="buy go" href="https://link.coupang.com/a/iqwQZ60pWe" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+<li><label><input type="checkbox" value="https://link.coupang.com/a/iqytv0zbMW" data-name="구운 김" checked> 구운 김 <small>1봉지</small></label><a class="buy go" href="https://link.coupang.com/a/iqytv0zbMW" target="_blank" rel="sponsored nofollow noopener">쿠팡</a></li>
+</ul>
 <p class="note">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </section>
 
@@ -146,6 +181,9 @@ th,td{padding:8px 4px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 <li id="step-5"><div>
 <p style="margin:0">구운 김을 부숴 넣어 고루 섞은 뒤 한입 크기로 동그랗게 뭉친다.</p><div class="chips"><span>구운 김</span></div></div></li>
 </ol>
+</section>
+<section class="box" id="tools"><h2>🍳 이 레시피에 쓴 도구</h2>
+<ul class="tools"><li><a href="https://www.coupang.com/np/search?q=%ED%94%84%EB%9D%BC%EC%9D%B4%ED%8C%AC" target="_blank" rel="sponsored nofollow noopener">프라이팬 <span>쿠팡</span></a></li><li><a href="https://www.coupang.com/np/search?q=%EB%B3%BC" target="_blank" rel="sponsored nofollow noopener">볼 <span>쿠팡</span></a></li></ul>
 </section>
 
 <section class="box" id="tips"><h2>요리 팁</h2><ul class="plain"><li>💡 청양고추는 매운맛을 보며 줄이고, 아이 도시락이라면 빼도 된다.</li><li>💡 양념 계량은 계량스푼 기준(1큰술 15ml)이다.</li><li>💡 도시락에 담을 때는 한 김 식혀서 넣어야 김이 눅눅해지지 않는다.</li></ul></section>
@@ -190,6 +228,19 @@ th,td{padding:8px 4px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 function load(s){var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0'+(s?'&start='+s:'');f.title=v.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;box.innerHTML='';box.appendChild(f);}
 v.addEventListener('click',function(e){e.preventDefault();load(0);});
 document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();load(+a.dataset.s);box.scrollIntoView({behavior:'smooth',block:'center'});});});})();
+// 장보기 박스: 자바스크립트가 있으면 재료별 링크를 숨기고 고른 재료만 버튼으로 펼친다 (없으면 재료별 링크 목록이 그대로 보임)
+(function(){var s=document.getElementById('shopping');if(!s)return;s.classList.add('js');
+var boxes=s.querySelectorAll('input[type=checkbox]'),list=s.querySelector('ul');
+var sel=document.createElement('div');sel.className='sel';sel.innerHTML='<a href="#" data-all="1">모두 선택</a><a href="#" data-all="0">모두 해제</a>';list.after(sel);
+var b=document.createElement('button');b.type='button';sel.after(b);
+var out=document.createElement('ul');out.className='picked';out.hidden=true;b.after(out);
+function cnt(){var c=0;boxes.forEach(function(x){if(x.checked)c++;});return c;}
+function label(){var c=cnt();b.textContent=c?'쿠팡에서 고른 재료 보기 ('+c+'개)':'재료를 골라 주세요';b.disabled=!c;}
+function show(){out.innerHTML='';boxes.forEach(function(x){if(!x.checked)return;var li=document.createElement('li'),a=document.createElement('a');li.textContent=x.dataset.name+' ';a.className='buy';a.href=x.value;a.target='_blank';a.rel='sponsored nofollow noopener';a.textContent='쿠팡에서 보기';li.appendChild(a);out.appendChild(li);});out.hidden=!out.children.length;}
+s.addEventListener('change',function(){label();if(!out.hidden)show();});
+sel.addEventListener('click',function(e){var a=e.target.closest('[data-all]');if(!a)return;e.preventDefault();boxes.forEach(function(x){x.checked=a.dataset.all==='1';});label();if(!out.hidden)show();});
+b.addEventListener('click',function(){show();if(!out.hidden)out.scrollIntoView({behavior:'smooth',block:'nearest'});});
+label();})();
 </script>
 </main>
 <footer>한입레시피 · 레시피 영상은 유튜브 공식 플레이어로 재생되며 조회수와 수익은 원작자에게 돌아갑니다.<br>

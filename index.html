@@ -142,6 +142,16 @@
   .have { color:#2b8a3e; } .miss { color:#e03131; } label { display:flex; gap:6px; align-items:center; color:var(--sub); font-size:14px; }
   .box > label + label { margin-top:6px; }
   .note { color:var(--sub); font-size:12px; margin-top:6px; }
+  .aff { background:#fff8e1; border:1px solid #ffe08a; color:#7a5200; border-radius:12px; padding:8px 12px; font-size:13px; line-height:1.5; margin:4px 0 10px; }
+  .shop .it { display:flex; align-items:center; gap:8px; padding:8px 0; border-bottom:1px solid var(--line); }
+  .shop .it label { flex:1; min-width:0; flex-wrap:wrap; gap:4px 8px; color:var(--ink); font-size:15px; cursor:pointer; }
+  .shop .it small { color:var(--sub); font-size:12px; }
+  .shop .sel { display:flex; gap:14px; font-size:13px; margin-top:8px; } .shop .sel button { background:none; color:var(--point); padding:0; font-size:13px; font-weight:600; }
+  .shop .go { margin-top:12px; width:100%; background:#e52528; }
+  .shop .picked { margin-top:10px; background:var(--soft); border-radius:12px; padding:2px 12px; }
+  .shop .picked .row { align-items:center; }
+  .tools { display:flex; flex-wrap:wrap; gap:8px; } .tools a { display:inline-flex; align-items:center; gap:6px; background:var(--soft); border-radius:999px; padding:6px 12px; font-size:14px; text-decoration:none; }
+  .tools a span { font-size:12px; color:#fff; background:#e52528; border-radius:6px; padding:1px 6px; }
   .toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:#222; color:#fff; padding:10px 16px; border-radius:999px; font-size:14px; z-index:40; }
   footer { border-top:1px solid var(--line); color:var(--sub); font-size:12px; text-align:center; padding:28px 20px 90px; }
   /* 휴대폰 */
@@ -575,7 +585,7 @@ async function detail(id) {
   const res = await fetch(ONE_URL(id));
   if (!res.ok) { setMeta({ title: '레시피를 찾을 수 없어요 | 한입레시피' }); setLd(null); $('#view').innerHTML = '<p class="msg err">레시피를 찾을 수 없어요. <a href="#/s">전체 레시피 보기</a></p>'; return; }
   const data = await res.json();
-  const { video = {}, recipe: x = {}, coupang_affiliate: aff } = data;
+  const { video = {}, recipe: x = {} } = data;
   const ings = x.ingredients || [], steps = x.steps || [], tags = x.tags || [], n = x.nutrition_per_serving;
   const base = x.servings || 1;
   let serv = base;
@@ -591,27 +601,53 @@ async function detail(id) {
     return `<div class="serv"><button type="button" data-d="-1" aria-label="인분 줄이기">−</button><b>${serv}인분</b><button type="button" data-d="1" aria-label="인분 늘리기">+</button>
       <span style="margin-left:auto">약 <span class="total">${won(total)}</span></span></div>
       ${ings.map((i) => `<div class="row ing"><span class="nm">${esc(i.name)}</span><em>${i.qty == null ? esc(i.unit || '적당량') : fmtQty(i.qty * k) + esc(i.unit || '')}${i.price_krw ? '&nbsp;· ' + won(i.price_krw * k) : ''}${i.coupang_url ? `<a class="buy" href="${esc(i.coupang_url)}" target="_blank" rel="noopener sponsored">쿠팡</a>` : ''}</em></div>`).join('')}
-      <p class="note">가격은 AI가 추정한 마트 기준 대략값이에요.</p>
-      ${aff ? '<p class="note">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>' : ''}`;
+      <p class="note">가격은 AI가 추정한 마트 기준 대략값이에요.</p>`;
   };
+  // 장보기 한 번에: 기본 양념(isBasic)은 «집에 있음»으로 기본 해제
+  const AFF_NOTE = '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
+  const buyable = ings.filter((i) => i.coupang_url), tools = x.tools || [];
+  const hasCoupang = buyable.length > 0 || tools.length > 0;
+  const picked = new Set(buyable.map((i, k) => isBasic(i.name) ? -1 : k).filter((k) => k >= 0));
+  let shown = false;
+  const SP = 'target="_blank" rel="sponsored nofollow noopener"';
+  const pickedList = () => shown && picked.size ? `<div class="picked">${buyable.map((i, k) => picked.has(k) ? `<div class="row"><span>${esc(i.name)}</span><a class="buy" href="${esc(i.coupang_url)}" ${SP}>쿠팡에서 보기</a></div>` : '').join('')}</div>` : '';
+  const shopBtn = () => `<button type="button" class="go" data-go ${picked.size ? '' : 'disabled'}>${picked.size ? `쿠팡에서 고른 재료 보기 (${picked.size}개)` : '재료를 골라 주세요'}</button>`;
+  const shopBox = buyable.length ? `<div class="box shop"><h3>🧺 이 레시피 장보기 한 번에</h3>
+      <p class="note" style="margin:0 0 6px">필요한 재료를 고르세요. 소금·간장 같은 기본 양념은 «집에 있음»으로 빼 두었어요.</p>
+      ${buyable.map((i, k) => `<div class="it"><label><input type="checkbox" data-pick="${k}" ${picked.has(k) ? 'checked' : ''}> ${esc(i.name)} <small>${i.qty == null ? esc(i.unit || '적당량') : fmtQty(i.qty) + esc(i.unit || '')}${isBasic(i.name) ? ' · 집에 있음' : ''}</small></label></div>`).join('')}
+      <div class="sel"><button type="button" data-all="1">모두 선택</button><button type="button" data-all="0">모두 해제</button></div>
+      <div id="shopgo">${shopBtn()}${pickedList()}</div>
+      <p class="note">${AFF_NOTE}</p></div>` : '';
+  const toolBox = tools.length ? `<div class="box"><h3>🍳 이 레시피에 쓴 도구</h3><div class="tools">${tools.map((t) => `<a href="https://www.coupang.com/np/search?q=${encodeURIComponent(t)}" ${SP}>${esc(t)} <span>쿠팡</span></a>`).join('')}</div></div>` : '';
   $('#view').innerHTML = `
     <div class="video"><iframe id="yt" src="https://www.youtube.com/embed/${id}" title="${esc(x.title)} 영상 (유튜브)" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
     <div class="dtitle"><h2>${esc(x.title)}</h2><button type="button" class="share" data-share>🔗 공유</button></div>
+    ${hasCoupang ? `<p class="aff">🛒 쿠팡 파트너스 링크가 있어요 — ${AFF_NOTE}</p>` : ''}
     <p style="margin:0 0 10px;color:var(--sub)">${esc(video.channel)} · ${views(video.views)}${x.summary ? ' — ' + esc(x.summary) : ''}</p>
     <div class="meta">${x.cook_minutes ? `<span class="hl">⏱ ${x.cook_minutes}분</span>` : ''}${x.servings ? `<span class="hl">🍽 ${x.servings}인분</span>` : ''}${sum0 ? `<span class="hl">💰 약 ${won(sum0)}</span>` : ''}${n?.kcal ? `<span class="hl">🔥 ${n.kcal}kcal</span>` : ''}${(x.tools || []).map((t) => `<span>🍳 ${esc(t)}</span>`).join('')}${tags.map((t) => `<a href="#/s?${new URLSearchParams({ tag: t })}">#${esc(t)}</a>`).join('')}</div>
     <div class="box"><h3>재료</h3><div id="ingr">${ingr()}</div></div>
+    ${shopBox}
     <div class="box"><h3>만드는 법</h3>${steps.length ? steps.map((s, i) => `<div class="step" id="step-${i + 1}"><div class="n">${i + 1}</div><div>
       ${s.start_sec != null ? `<button type="button" class="t" data-s="${s.start_sec}">▶ ${mmss(s.start_sec)}</button>` : ''}
       <div>${esc(s.text)}</div><div class="chips">${(s.ingredients || []).map((g) => `<span>${esc(g)}</span>`).join('')}</div></div></div>`).join('') : '<p class="note">단계별 순서가 따로 정리되지 않았어요. 위 영상에서 과정을 확인해 주세요.</p>'}</div>
+    ${toolBox}
     ${x.tips?.length ? `<div class="box"><h3>요리 팁</h3>${x.tips.map((t) => `<div class="row"><span>💡 ${esc(t)}</span></div>`).join('')}</div>` : ''}
     ${n ? `<div class="box"><h3>영양성분 <small style="color:var(--sub);font-weight:400">1인분 · 추정</small></h3><div class="meta">
       ${[['', n.kcal, 'kcal'], ['단백질 ', n.protein_g, 'g'], ['탄수화물 ', n.carbs_g, 'g'], ['지방 ', n.fat_g, 'g']].filter((v) => v[1] != null).map(([k, v, u]) => `<span>${k}${v}${u}</span>`).join('')}</div></div>` : ''}
     <p class="note">영상은 유튜브 공식 플레이어로 재생돼요.</p>
     <div id="rel"></div>`;
+  const redrawShop = () => { if ($('#shopgo')) $('#shopgo').innerHTML = shopBtn() + pickedList(); };
+  $('#view').onchange = (e) => {
+    const k = e.target.dataset?.pick; if (k == null) return;
+    if (e.target.checked) picked.add(+k); else picked.delete(+k);
+    redrawShop();
+  };
   $('#view').onclick = async (e) => {
     const b = e.target.closest('button'); if (!b) return;
     const d = b.dataset;
     if (d.d) { serv = Math.max(1, serv + +d.d); $('#ingr').innerHTML = ingr(); }
+    if (d.all != null) { buyable.forEach((_, k) => d.all === '1' ? picked.add(k) : picked.delete(k)); document.querySelectorAll('[data-pick]').forEach((c) => { c.checked = d.all === '1'; }); redrawShop(); }
+    if (d.go != null) { shown = true; redrawShop(); $('#shopgo .picked')?.scrollIntoView({ behavior:'smooth', block:'nearest' }); }
     if (d.s) play(+d.s);
     if (d.share != null) {
       const url = `${SITE}recipes/${id}/`;
