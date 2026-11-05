@@ -28,7 +28,7 @@ function toFile(url, fromFile) {
 }
 
 export function check() {
-  const errors = [];
+  const errors = [], warnings = [];
   const files = walk(ROOT);
   const htmls = files.filter((f) => f.endsWith('.html'));
   let ldCount = 0, linkCount = 0;
@@ -41,6 +41,12 @@ export function check() {
     if (name === 'index.html') {
       const m = html.match(/<!-- seo:start -->[\s\S]*?<!-- seo:end -->/g) || [];
       if (m.length !== 1) errors.push(`index.html: seo 영역이 ${m.length}개 (1개여야 함)`);
+      const head = html.slice(0, html.indexOf('</head>'));
+      for (const [re, what] of [[/<link rel="canonical" href="https:\/\/[^"]+">/, 'canonical'], [/<meta property="og:title"/, 'og:title'], [/<meta property="og:image" content="[^"]+">/, 'og:image']]) {
+        if (!re.test(head)) errors.push(`index.html: head 에 ${what} 없음`);
+      }
+      // build.mjs 가 예전 화면 틀로 index.html 을 덮어쓰면 거르기·정렬·Recipe 구조화 데이터가 사라진다
+      if (!html.includes('function applyFilters') || !html.includes('function recipeLd')) warnings.push('index.html 이 예전 화면이에요(거르기·정렬·상세 Recipe 구조화 데이터 없음). build.mjs 의 화면 틀을 이 저장소의 index.html 로 바꿔 주세요.');
       html = m.join('\n');
     } else {
       for (const [re, what] of [[/<title>[^<]+<\/title>/, '제목'], [/<meta name="description" content="[^"]+">/, '설명'], [/<link rel="canonical" href="https:\/\/[^"]+">/, 'canonical'], [/<meta property="og:title"/, 'og:title']]) {
@@ -122,6 +128,7 @@ export function check() {
 
   const pages = htmls.filter((f) => rel(f) !== 'index.html').length;
   console.log(`검사: HTML ${htmls.length}개(새로 만든 페이지 ${pages}개), JSON-LD ${ldCount}개 [${Object.entries(types).map(([k, v]) => `${k} ${v}`).join(', ')}], 내부 링크 ${linkCount}개, sitemap 주소 ${locs.length}개, 비밀 값 검사 파일 ${files.length}개`);
+  for (const w of warnings) console.log('⚠️  ' + w);
   if (errors.length) { console.log(`❌ 문제 ${errors.length}개`); for (const e of errors) console.log('  - ' + e); return false; }
   console.log('✅ 문제 없음: JSON-LD 모두 정상, 내부 링크 모두 실제 파일, 비밀 값 없음');
   return true;

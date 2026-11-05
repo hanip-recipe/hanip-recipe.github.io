@@ -2,17 +2,38 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>한입레시피 - 유튜브 요리 영상을 레시피로</title>
-<meta name="description" content="유튜브 인기 요리 영상을 재료·순서·가격까지 정리한 레시피로. 냉장고 재료로 찾고, 장보기까지 한 번에.">
+<meta name="description" content="유튜브 인기 요리 영상을 재료·순서·가격까지 정리한 레시피로. 냉장고 재료로 찾고, 조리 시간·재료비·칼로리로 골라 장보기까지 한 번에.">
+<link rel="canonical" href="https://kawaijin74-sudo.github.io/hanip-recipe/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#ff5a1f">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="한입레시피">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="한입레시피 - 유튜브 요리 영상을 레시피로">
+<meta property="og:description" content="유튜브 인기 요리 영상을 재료·순서·가격까지 정리한 레시피로. 냉장고 재료로 찾고, 조리 시간·재료비·칼로리로 골라 장보기까지 한 번에.">
+<meta property="og:url" content="https://kawaijin74-sudo.github.io/hanip-recipe/">
+<meta property="og:image" content="https://kawaijin74-sudo.github.io/hanip-recipe/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="한입레시피 - 유튜브 요리 영상을 레시피로">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="한입레시피 - 유튜브 요리 영상을 레시피로">
+<meta name="twitter:description" content="유튜브 인기 요리 영상을 재료·순서·가격까지 정리한 레시피로. 냉장고 재료로 찾고, 조리 시간·재료비·칼로리로 골라 장보기까지 한 번에.">
+<meta name="twitter:image" content="https://kawaijin74-sudo.github.io/hanip-recipe/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23ff5a1f'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='800'%3E한%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://i.ytimg.com">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   :root { --bg:#fff; --soft:#f7f7f8; --card:#fff; --ink:#1a1a1a; --sub:#8a8a8e; --line:#efeff1; --point:#ff5a1f; --point-soft:#fff2ec; }
   * { box-sizing:border-box; } [hidden] { display:none !important; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 "Pretendard Variable","Pretendard","Malgun Gothic",system-ui,sans-serif; letter-spacing:-0.01em; -webkit-font-smoothing:antialiased; }
-  a { color:inherit; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.55 "Pretendard Variable","Pretendard","Malgun Gothic",system-ui,sans-serif; letter-spacing:-0.01em; -webkit-font-smoothing:antialiased; word-break:keep-all; overflow-wrap:anywhere; }
+  a { color:inherit; } img { max-width:100%; }
   /* 상단 바 */
-  .top { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  .top { position:sticky; top:0; z-index:20; background:rgba(255,255,255,.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
   .top .in { max-width:1120px; margin:0 auto; padding:12px 20px; display:flex; align-items:center; gap:20px; }
   .logo { font-size:21px; font-weight:800; text-decoration:none; color:var(--point); white-space:nowrap; letter-spacing:-0.03em; }
   .search { flex:1; max-width:460px; display:flex; margin:0; background:var(--soft); border-radius:999px; padding:2px 4px 2px 16px; }
@@ -20,7 +41,7 @@
   .search input:focus { outline:none; }
   .search button { background:none; color:var(--ink); padding:6px 10px; font-size:16px; }
   nav { display:flex; gap:4px; margin-left:auto; }
-  nav a { padding:8px 14px; border-radius:999px; text-decoration:none; font-weight:600; color:#555; font-size:14px; }
+  nav a { padding:8px 14px; border-radius:999px; text-decoration:none; font-weight:600; color:#555; font-size:14px; white-space:nowrap; }
   nav a:hover { background:var(--soft); } nav a.on { color:var(--point); background:var(--point-soft); }
   .wrap { max-width:1120px; margin:0 auto; padding:20px 20px 100px; }
   #view.narrow { max-width:760px; margin:0 auto; }
@@ -28,20 +49,26 @@
   input { flex:1; min-width:0; padding:12px 14px; border:1px solid #e3e3e6; border-radius:12px; font:inherit; background:#fff; }
   button { padding:12px 18px; border:0; border-radius:12px; background:var(--point); color:#fff; font:inherit; font-weight:700; cursor:pointer; }
   button:disabled { opacity:.5; cursor:wait; }
+  :focus-visible { outline:2px solid var(--point); outline-offset:2px; }
   .msg { margin:0 0 20px; color:var(--sub); } .msg.err { color:#e03131; }
+  .ph { margin:4px 0 14px; font-size:22px; letter-spacing:-0.03em; } .ph small { color:var(--sub); font-size:14px; font-weight:500; }
   /* 배너 */
   .banner { position:relative; height:200px; border-radius:20px; overflow:hidden; margin-bottom:22px; }
   .slide { position:absolute; inset:0; padding:34px 40px; color:#fff; text-decoration:none; display:flex; flex-direction:column; justify-content:center; gap:4px; opacity:0; transition:opacity .6s; }
   .slide.on { opacity:1; z-index:1; }
   .slide::after { content:attr(data-emoji); position:absolute; right:40px; bottom:-10px; font-size:150px; opacity:.9; filter:drop-shadow(0 8px 20px #0003); }
-  .slide span { font-size:13px; font-weight:700; opacity:.9; } .slide b { font-size:28px; letter-spacing:-0.03em; } .slide small { font-size:15px; opacity:.9; }
+  .slide span, .slide b, .slide small { position:relative; z-index:1; max-width:70%; }
+  .slide span { font-size:13px; font-weight:700; opacity:.9; } .slide b { font-size:28px; letter-spacing:-0.03em; line-height:1.3; } .slide small { font-size:15px; opacity:.9; }
   .dots { position:absolute; left:40px; bottom:18px; z-index:2; display:flex; gap:6px; }
   .dots i { width:6px; height:6px; border-radius:3px; background:#fff8; transition:width .3s; } .dots i.on { width:18px; background:#fff; }
   /* 카테고리 */
   .cats { display:grid; grid-template-columns:repeat(10,1fr); gap:8px; margin-bottom:12px; }
-  .cats a { display:flex; flex-direction:column; align-items:center; gap:6px; text-decoration:none; font-size:13px; font-weight:600; color:#444; }
+  .cats a { display:flex; flex-direction:column; align-items:center; gap:6px; text-decoration:none; font-size:13px; font-weight:600; color:#444; text-align:center; }
   .cats span { width:56px; height:56px; border-radius:18px; background:var(--soft); display:grid; place-items:center; font-size:26px; transition:transform .15s; }
   .cats a:hover span { transform:translateY(-3px); background:var(--point-soft); }
+  .quick { display:flex; gap:6px; flex-wrap:wrap; margin:18px 0 0; }
+  .quick a { padding:7px 13px; border-radius:999px; background:var(--soft); text-decoration:none; font-size:13px; font-weight:600; color:#444; white-space:nowrap; }
+  .quick a:hover { background:var(--point-soft); color:var(--point); }
   /* 섹션과 카드 */
   .sec { margin-top:34px; }
   .sh { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:12px; gap:10px; }
@@ -57,43 +84,100 @@
   .badge { position:absolute; left:8px; bottom:8px; background:rgba(0,0,0,.65); color:#fff; font-size:12px; font-weight:700; padding:3px 8px; border-radius:6px; }
   .rc b { font-size:15px; line-height:1.35; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
   .rc small { color:var(--sub); font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; } .rc .vw { font-size:12px; }
+  .fx { color:#666 !important; font-size:12px !important; }
+  .more { display:block; margin:24px auto 0; background:var(--point-soft); color:var(--point); padding:12px 26px; }
+  /* 거르기 · 정렬 */
+  .fbar { background:var(--soft); border-radius:16px; padding:14px; margin:0 0 12px; }
+  .sels { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+  .sel { display:flex; flex-direction:column; align-items:stretch; gap:4px; font-size:12px; font-weight:700; color:#666; }
+  select { width:100%; min-width:0; font:inherit; font-size:14px; font-weight:500; color:var(--ink); padding:9px 30px 9px 12px; border:1px solid #e3e3e6; border-radius:10px; background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238a8a8e' stroke-width='1.6' fill='none'/%3E%3C/svg%3E") no-repeat right 12px center; -webkit-appearance:none; appearance:none; cursor:pointer; }
+  select.set { border-color:var(--point); color:var(--point); font-weight:700; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+  .chip { padding:6px 12px; border-radius:999px; background:#fff; border:1px solid #e3e3e6; color:#444; font-size:13px; font-weight:600; white-space:nowrap; }
+  .chip.on { background:var(--point); border-color:var(--point); color:#fff; }
+  .chip.ghost { background:none; border-style:dashed; color:var(--sub); }
+  .qchip { display:inline-flex; align-items:center; gap:6px; background:#fff; border-radius:999px; padding:4px 6px 4px 12px; margin:0 0 10px; font-size:13px; color:#555; }
+  .x { width:24px; height:24px; padding:0; border-radius:50%; background:var(--soft); color:#555; font-size:15px; line-height:1; }
+  .rbar { display:flex; justify-content:space-between; align-items:center; gap:8px; margin:0 0 14px; color:var(--sub); font-size:14px; }
+  .rbar b { color:var(--ink); }
+  .link { background:none; color:var(--point); padding:4px 0; font-size:14px; }
+  /* 재료로 찾기 */
+  .ibox { display:flex; flex-wrap:wrap; gap:6px; align-items:center; background:#fff; border:1px solid #e3e3e6; border-radius:12px; padding:6px; margin:0 0 10px; }
+  .ibox input { border:0; padding:8px 6px; min-width:140px; } .ibox input:focus { outline:none; }
+  .ibox:focus-within { border-color:var(--point); }
+  .ibox button[type=submit] { padding:8px 14px; }
+  .ing-chip { display:inline-flex; align-items:center; gap:4px; background:var(--point-soft); color:var(--point); border-radius:999px; padding:4px 4px 4px 11px; font-size:14px; font-weight:700; }
+  .ing-chip .x { background:#fff; color:var(--point); width:22px; height:22px; font-size:14px; }
+  .sugg { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin:0 0 10px; font-size:13px; color:var(--sub); }
+  .sugg .chip { padding:4px 10px; font-size:13px; }
+  .flist { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:12px; }
+  .fcard { display:flex; gap:12px; text-decoration:none; border:1px solid var(--line); border-radius:16px; padding:12px; min-width:0; }
+  .fcard:hover { border-color:#ffd3c2; }
+  .fcard img { width:120px; height:120px; object-fit:cover; border-radius:10px; flex:none; background:var(--soft); }
+  .fcard .fc { min-width:0; display:flex; flex-direction:column; gap:3px; }
+  .fcard b { line-height:1.35; } .fcard small { font-size:13px; }
+  .meter { height:6px; border-radius:3px; background:var(--soft); overflow:hidden; margin:2px 0; } .meter i { display:block; height:100%; background:#2b8a3e; border-radius:3px; }
   /* 상세 */
   .video { position:relative; aspect-ratio:16/9; border-radius:16px; overflow:hidden; background:#000; }
   .video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .dtitle { display:flex; align-items:flex-start; gap:10px; margin:14px 0 4px; } .dtitle h2 { margin:0; flex:1; min-width:0; line-height:1.3; }
+  .share { flex:none; padding:7px 12px; font-size:13px; background:var(--point-soft); color:var(--point); border-radius:999px; }
   .box { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin-top:14px; }
   .box h3 { margin:0 0 10px; font-size:17px; }
-  .meta { display:flex; gap:8px; flex-wrap:wrap; } .meta span { background:var(--soft); padding:4px 10px; border-radius:999px; font-size:13px; }
+  .meta { display:flex; gap:8px; flex-wrap:wrap; } .meta span, .meta a { background:var(--soft); padding:4px 10px; border-radius:999px; font-size:13px; text-decoration:none; }
+  .meta a:hover { background:var(--point-soft); color:var(--point); }
+  .meta .hl { background:var(--point-soft); color:var(--point); font-weight:700; }
   .row { display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px solid var(--line); gap:8px; }
   .row:last-child { border:0; } .row em { color:var(--sub); font-style:normal; white-space:nowrap; }
+  .ing .nm { flex:1; min-width:0; } .ing em { display:flex; flex-wrap:wrap; justify-content:flex-end; align-items:center; gap:2px 0; white-space:normal; text-align:right; }
   .serv { display:flex; align-items:center; gap:10px; } .serv button { padding:4px 12px; }
   .total { font-size:18px; font-weight:800; color:var(--point); }
   .step { display:flex; gap:12px; padding:12px 0; border-bottom:1px solid var(--line); } .step:last-child { border:0; }
+  .step > div:last-child { min-width:0; }
   .step .n { flex:none; width:28px; height:28px; border-radius:50%; background:var(--point); color:#fff; display:grid; place-items:center; font-weight:700; }
   .step .t { background:none; color:var(--point); padding:0; font-size:13px; font-weight:700; }
   .chips span { display:inline-block; font-size:12px; background:var(--soft); border-radius:6px; padding:1px 7px; margin:2px 4px 0 0; }
   .buy { margin-left:8px; font-size:12px; color:#fff; background:#e52528; padding:2px 8px; border-radius:6px; text-decoration:none; white-space:nowrap; }
-  input[type=checkbox] { flex:none; width:auto; }
+  input[type=checkbox] { flex:none; width:18px; height:18px; accent-color:var(--point); }
   .have { color:#2b8a3e; } .miss { color:#e03131; } label { display:flex; gap:6px; align-items:center; color:var(--sub); font-size:14px; }
+  .box > label + label { margin-top:6px; }
   .note { color:var(--sub); font-size:12px; margin-top:6px; }
-  .card { display:flex; text-decoration:none; }
+  .toast { position:fixed; left:50%; bottom:90px; transform:translateX(-50%); background:#222; color:#fff; padding:10px 16px; border-radius:999px; font-size:14px; z-index:40; }
   footer { border-top:1px solid var(--line); color:var(--sub); font-size:12px; text-align:center; padding:28px 20px 90px; }
   /* 휴대폰 */
   @media (max-width:820px) {
+    /* 흐림 효과(backdrop-filter)가 있으면 아래 고정 메뉴가 화면이 아니라 상단 바 기준으로 붙어 검색창을 덮는다 → 휴대폰에서는 끈다 */
+    .top { background:#fff; backdrop-filter:none; -webkit-backdrop-filter:none; }
     .top .in { flex-wrap:wrap; gap:10px; padding:10px 16px; } .search { order:3; max-width:none; flex-basis:100%; }
     nav { position:fixed; left:0; right:0; bottom:0; margin:0; background:#fff; border-top:1px solid var(--line); justify-content:space-around; padding:6px 0 calc(6px + env(safe-area-inset-bottom)); z-index:30; }
+    nav a { padding:8px 10px; font-size:13px; }
+    input, select { font-size:16px; } /* 아이폰에서 입력할 때 화면이 확대되지 않게 */
     .wrap { padding:14px 16px 100px; }
-    .banner { height:160px; } .slide { padding:22px; } .slide b { font-size:21px; } .slide::after { font-size:100px; right:14px; } .dots { left:22px; }
+    .banner { height:160px; border-radius:16px; } .slide { padding:22px; } .slide b { font-size:20px; } .slide small { font-size:13px; } .slide::after { font-size:96px; right:12px; } .dots { left:22px; bottom:14px; }
     .cats { grid-template-columns:repeat(5,1fr); row-gap:14px; } .cats span { width:50px; height:50px; font-size:23px; }
+    .quick { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; margin-right:-16px; padding-right:16px; } .quick::-webkit-scrollbar { display:none; }
     .hs { grid-auto-columns:42%; }
-    .sh h3 { font-size:18px; }
+    .sh h3 { font-size:18px; } .ph { font-size:20px; }
+    .grid2 { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 10px; }
+    .sels { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    .fbar { padding:12px; }
+    .tags { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; margin-right:-12px; padding-right:12px; } .tags::-webkit-scrollbar { display:none; }
+    .tags.open { flex-wrap:wrap; }
+    .flist { grid-template-columns:1fr; }
+    .ibox input { flex:1 1 100px; min-width:100px; }
+    .sugg { flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; margin-right:-14px; padding-right:14px; } .sugg::-webkit-scrollbar { display:none; } .sugg > span { flex:none; }
+    .fcard img { width:96px; height:96px; }
+    .box { padding:14px; } .video { border-radius:12px; }
+    .dtitle h2 { font-size:21px; }
   }
+  @media (max-width:360px) { .cats a { font-size:12px; } .cats span { width:44px; height:44px; font-size:21px; } }
 </style>
 </head>
 <body>
 <header class="top"><div class="in">
   <a class="logo" href="#/">한입레시피</a>
-  <form id="sf2" class="search"><input id="q" placeholder="요리, 재료 검색 (예: 제육볶음, 두부)"><button aria-label="검색">🔍</button></form>
-  <nav><a href="#/" data-nav="home">🏠 홈</a><a href="#/find" data-nav="find">🧊 재료로 찾기</a><a href="#/settings" id="n-set" data-nav="set">⚙ 설정</a></nav>
+  <form id="sf2" class="search" role="search"><input id="q" type="search" placeholder="요리, 재료 검색 (예: 제육볶음, 두부)" aria-label="요리, 재료 검색" enterkeyhint="search"><button aria-label="검색">🔍</button></form>
+  <nav><a href="#/" data-nav="home">🏠 홈</a><a href="#/s" data-nav="all">📖 전체</a><a href="#/find" data-nav="find">🧊 재료로 찾기</a><a href="#/settings" id="n-set" data-nav="set">⚙ 설정</a></nav>
 </div></header>
 <div class="wrap">
   <form id="f"><input id="u" placeholder="유튜브 요리 영상 링크를 붙여 넣으세요" required><button id="b">레시피 만들기</button></form>
@@ -105,16 +189,22 @@
 <script>
 // 공개 사이트(build.mjs가 STATIC=true로 만듦)는 저장된 JSON만 읽는 보기 전용
 const STATIC = true;
+const SITE = 'https://kawaijin74-sudo.github.io/hanip-recipe/';
 const LIST_URL = STATIC ? 'recipes.json' : '/api/recipes';
 const ONE_URL = (id) => STATIC ? `r/${id}.json` : '/api/recipes/' + id;
 const $ = (s) => document.querySelector(s);
-const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const won = (n) => Math.round(n).toLocaleString('ko-KR') + '원';
 const views = (n) => n == null ? '' : n >= 1e8 ? (n/1e8).toFixed(1)+'억회' : n >= 1e4 ? (n/1e4).toFixed(1)+'만회' : n+'회';
 const mmss = (s) => `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;
 const fmtQty = (q) => q == null ? '' : +(+q).toFixed(1);
+const cut = (s, n) => { s = String(s || '').replace(/\s+/g, ' ').trim(); return s.length <= n ? s : s.slice(0, n - 1).trimEnd() + '…'; };
+const isoDur = (sec) => { if (!sec) return null; const h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60; return 'PT' + (h ? h + 'H' : '') + (m ? m + 'M' : '') + (s ? s + 'S' : ''); };
+const jpgThumb = (u) => String(u || '').replace(/^https:\/\/i\.ytimg\.com\/vi_webp\/([\w-]+)\/(\w+)\.webp$/, 'https://i.ytimg.com/vi/$1/$2.jpg');
+const store = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} } };
 
 function say(text, err) { const m = $('#msg'); m.hidden = !text; m.textContent = text || ''; m.className = 'msg' + (err ? ' err' : ''); }
+function toast(text) { const t = document.createElement('div'); t.className = 'toast'; t.setAttribute('role', 'status'); t.textContent = text; document.body.appendChild(t); setTimeout(() => t.remove(), 2200); }
 
 $('#f').onsubmit = async (e) => {
   e.preventDefault();
@@ -123,31 +213,191 @@ $('#f').onsubmit = async (e) => {
     const r = await fetch('/api/recipes', { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({ url: $('#u').value }) });
     const d = await r.json();
     if (!r.ok) throw new Error(d.error);
-    say(''); $('#u').value = ''; location.hash = '#/r/' + d.id;
+    LIST = null; say(''); $('#u').value = ''; location.hash = '#/r/' + d.id;
   } catch (err) { say(err.message, true); }
   $('#b').disabled = false;
 };
 
-// 레시피오식 첫 화면: 배너 · 카테고리 · 주제별 가로 줄
-const has = (r, ...words) => [...r.tags, r.title, ...r.ingredients].some((t) => words.some((w) => t.includes(w)));
+// 썸네일이 없으면(고화질 없음 등) 유튜브 기본 썸네일로 바꾼다
+addEventListener('error', (e) => {
+  const t = e.target;
+  if (t.tagName !== 'IMG' || t.dataset.fb) return;
+  t.dataset.fb = 1;
+  const m = t.src.match(/\/vi(?:_webp)?\/([\w-]{11})\//);
+  if (m) t.src = `https://i.ytimg.com/vi/${m[1]}/hqdefault.jpg`;
+}, true);
+
+// ───────── 데이터: recipes.json 을 한 번만 받아 정리해 둔다 (레시피가 몇 개든 같은 방식) ─────────
+const pos = (v) => (v == null || v === '' || !(+v > 0)) ? null : +v;
+const norm = (s) => String(s || '').replace(/\(.*?\)/g, '').replace(/\s/g, '').toLowerCase();
+const prep = (r) => {
+  const ingredients = (r.ingredients || []).map(String), tags = (r.tags || []).map(String);
+  return { ...r, ingredients, tags, title: r.title || '', channel: r.channel || '',
+    minutes: pos(r.cook_minutes), price: pos(r.total_price), kcal: pos(r.kcal), servings: pos(r.servings), views: +r.views || 0,
+    created: r.created_at || '', ingN: ingredients.map(norm),
+    hay: [r.title, r.channel, ...ingredients, ...tags].join('|').replace(/\s/g, '').toLowerCase() };
+};
+let LIST = null;
+async function getList() {
+  if (!LIST) {
+    const res = await fetch(LIST_URL);
+    if (!res.ok) throw new Error('레시피 목록을 불러오지 못했어요. 잠시 뒤 다시 시도해 주세요.');
+    LIST = (await res.json()).map(prep);
+  }
+  return LIST;
+}
+
+// ───────── 재료 이름 맞추기 ─────────
+// 같은 재료의 다른 이름. 입력한 말이 여기 있으면 이 단어들 중 하나가 재료 이름에 들어 있으면 맞는 것으로 본다
+const ALIAS = {
+  계란:['계란','달걀'], 달걀:['계란','달걀'],
+  돼지고기:['돼지','삼겹','목살','앞다리','뒷다리','항정','제육'], 돼지:['돼지','삼겹','목살','앞다리','뒷다리','항정','제육'],
+  소고기:['소고기','쇠고기','차돌','우삼겹','양지','사태','불고기','한우'], 쇠고기:['소고기','쇠고기','차돌','우삼겹','양지','사태','불고기','한우'],
+  닭고기:['닭'], 닭:['닭'], 파:['대파','쪽파','실파','파채'], 면:['면','국수','파스타','스파게티','우동','라면','소바','당면'], 밥:['밥','햇반'],
+};
+// 이름에 들어 있어도 다른 재료인 경우 (고추 ≠ 고추장, 굴 ≠ 굴소스 …)
+const NOT = { 고추:['고추장','고추기름','고추냉이'], 굴:['굴소스'], 파:['양파','파스타','파슬리','파프리카'], 김:['김치'], 무:['무침'], 깨:['깻잎'], 배추:['양배추'], 감자:['감자전분','감자가루'], 오이:['오이고추'] };
+function ingMatch(t, n) {
+  if (!t || !n) return false;
+  if (n === t) return true;
+  if ((NOT[t] || []).some((w) => n.includes(w))) return false;
+  if (ALIAS[t]) return ALIAS[t].some((w) => n.includes(w));
+  if (t.length === 1) return n.endsWith(t);
+  return n.includes(t) || (n.length >= 2 && t.includes(n));
+}
+const BASIC = '소금 맛소금 후추 후춧가루 설탕 간장 진간장 국간장 양조간장 식용유 참기름 들기름 다진마늘 마늘 간마늘 고춧가루 고추장 된장 식초 물 깨 통깨 참깨 깨소금 미림 맛술 올리고당 물엿 굴소스'.split(' ');
+const isBasic = (n) => BASIC.some((b) => n === b || (b.length > 1 && n.endsWith(b))); // '물'은 콩나물과 헷갈리지 않게 그대로일 때만
+
+// ───────── 분류 · 거르기 · 정렬 ─────────
+const tagHas = (r, ...ws) => r.tags.some((t) => ws.some((w) => t.includes(w)));
 const CATS = [
-  ['QUICK', '⚡', '초스피드', (r) => r.cook_minutes && r.cook_minutes <= 15 || has(r, '초스피드')],
-  ['LATE', '🌙', '야식', (r) => has(r, '야식', '술안주')],
-  ['DIET', '🥗', '다이어트', (r) => has(r, '다이어트', '샐러드') || (r.kcal && r.kcal <= 450)],
-  ['SOLO', '🍚', '혼밥', (r) => has(r, '혼밥', '덮밥') || r.servings === 1],
-  ['KIDS', '🧒', '아이와 함께', (r) => has(r, '아이')],
-  ['HANGOVER', '🍲', '해장', (r) => has(r, '해장', '국물', '탕', '찌개')],
-  ['PARTY', '🎉', '기념일', (r) => has(r, '기념일', '홈파티')],
-  ['CHEAP', '💰', '만원 이하', (r) => r.total_price && r.total_price <= 10000],
-  ['NOODLE', '🍜', '면요리', (r) => has(r, '면', '국수', '파스타', '우동', '라면', '소바')],
-  ['SIDE', '🥢', '밑반찬', (r) => has(r, '밑반찬', '반찬', '무침', '조림')],
+  ['QUICK', '⚡', '초스피드', (r) => (r.minutes && r.minutes <= 15) || tagHas(r, '초스피드')],
+  ['LATE', '🌙', '야식', (r) => tagHas(r, '야식', '술안주')],
+  ['DIET', '🥗', '다이어트', (r) => tagHas(r, '다이어트', '샐러드') || (r.kcal && r.kcal <= 450)],
+  ['SOLO', '🍚', '혼밥', (r) => tagHas(r, '혼밥', '덮밥') || r.servings === 1],
+  ['KIDS', '🧒', '아이와 함께', (r) => tagHas(r, '아이')],
+  ['HANGOVER', '🍲', '해장', (r) => tagHas(r, '해장', '국물', '찌개') || r.tags.includes('국') || r.tags.includes('탕') || /찌개|(?<!그라)탕$|국$/.test(r.title)],
+  ['PARTY', '🎉', '기념일', (r) => tagHas(r, '기념일', '파티')],
+  ['CHEAP', '💰', '만원 이하', (r) => r.price && r.price <= 10000],
+  ['NOODLE', '🍜', '면요리', (r) => tagHas(r, '면요리', '파스타', '국수') || /파스타|국수|라면|우동|소바|냉면|알리오|짜장|짬뽕/.test(r.title)],
+  ['SIDE', '🥢', '밑반찬', (r) => tagHas(r, '반찬') || /무침|조림|장아찌|나물/.test(r.title)],
 ];
+const CAT_SORT = { QUICK:'time', CHEAP:'price', DIET:'kcal' };
+const TIME = [['', '전체'], ['10', '10분 이하'], ['20', '20분 이하'], ['30', '30분 이하'], ['60', '1시간 이하']];
+const PRICE = [['', '전체'], ['5000', '5천원 이하'], ['10000', '1만원 이하'], ['20000', '2만원 이하']];
+const KCAL = [['', '전체'], ['300', '300kcal 이하'], ['500', '500kcal 이하'], ['700', '700kcal 이하']];
+const byViews = (a, b) => b.views - a.views || a.id.localeCompare(b.id);
+const asc = (k) => (a, b) => (a[k] ?? Infinity) - (b[k] ?? Infinity) || byViews(a, b);
+const SORTS = {
+  views: ['조회수 많은 순', byViews],
+  time: ['조리 시간 짧은 순', asc('minutes')],
+  price: ['재료비 싼 순', asc('price')],
+  kcal: ['칼로리 낮은 순', asc('kcal')],
+  new: ['새로 올라온 순', (a, b) => b.created.localeCompare(a.created) || byViews(a, b)],
+};
+const PAGE = 24;
+
+function readFilters(p, defSort) {
+  const v = (k, opts) => opts.some(([x]) => x && x === p.get(k)) ? p.get(k) : '';
+  return { q: (p.get('q') || '').trim(), t: v('t', TIME), p: v('p', PRICE), k: v('k', KCAL),
+    tags: (p.get('tag') || '').split(',').map((s) => s.trim()).filter(Boolean), sort: p.get('sort') || defSort, defSort };
+}
+function filterParams(st) {
+  const p = new URLSearchParams();
+  if (st.q) p.set('q', st.q);
+  for (const k of ['t', 'p', 'k']) if (st[k]) p.set(k, st[k]);
+  if (st.tags.length) p.set('tag', st.tags.join(','));
+  if (st.sort !== st.defSort) p.set('sort', st.sort);
+  return p;
+}
+const setHash = (path, p) => { const qs = p.toString(); history.replaceState(null, '', '#' + path + (qs ? '?' + qs : '')); };
+const filtersOn = (st) => !!(st.t || st.p || st.k || st.tags.length);
+function applyFilters(items, st) {
+  const whole = norm(st.q), words = st.q ? st.q.toLowerCase().split(/[,\s]+/).filter(Boolean) : [];
+  return items.filter((r) => (!st.q || r.hay.includes(whole) || words.every((w) => r.hay.includes(w)))
+    && (!st.t || (r.minutes && r.minutes <= +st.t))
+    && (!st.p || (r.price && r.price <= +st.p))
+    && (!st.k || (r.kcal && r.kcal <= +st.k))
+    && (!st.tags.length || st.tags.some((t) => r.tags.includes(t))));
+}
+function tagCounts(items) {
+  const c = new Map();
+  for (const r of items) for (const t of new Set(r.tags)) c.set(t, (c.get(t) || 0) + 1);
+  return [...c].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko'));
+}
+const sel = (key, label, opts, val) => `<label class="sel"><span>${label}</span><select data-f="${key}" class="${val && !(key === 'sort') ? 'set' : ''}">${opts.map(([v, t]) => `<option value="${v}"${v === val ? ' selected' : ''}>${t}</option>`).join('')}</select></label>`;
+function filterBar(st, base, sorts, open) {
+  const all = tagCounts(base), TOP = 10;
+  const shown = open ? all : all.filter(([t], i) => i < TOP || st.tags.includes(t));
+  return `${st.q ? `<div class="qchip">검색어 <b>${esc(st.q)}</b><button type="button" class="x" data-clearq aria-label="검색어 지우기">×</button></div>` : ''}
+    <div class="sels">${sel('t', '⏱ 조리 시간', TIME, st.t)}${sel('p', '💰 재료비', PRICE, st.p)}${sel('k', '🔥 칼로리(1인분)', KCAL, st.k)}${sel('sort', '↕ 정렬', sorts, st.sort)}</div>
+    ${all.length ? `<div class="tags${open ? ' open' : ''}" role="group" aria-label="태그로 거르기">${shown.map(([t, n]) => `<button type="button" class="chip${st.tags.includes(t) ? ' on' : ''}" data-tag="${esc(t)}" aria-pressed="${st.tags.includes(t)}">#${esc(t)} <small>${n}</small></button>`).join('')}${all.length > TOP ? `<button type="button" class="chip ghost" data-tagmore>${open ? '접기' : `+ 태그 ${all.length - shown.length}개 더`}</button>` : ''}</div>` : ''}`;
+}
+// 거르기 막대의 이벤트를 붙인다. onChange 는 조건이 바뀔 때, onMore 는 '더 보기'를 누를 때
+function bindFilters(st, redrawBar, onChange, onMore) {
+  const v = $('#view');
+  v.onchange = (e) => { const f = e.target.dataset?.f; if (!f) return; st[f] = e.target.value; redrawBar(); onChange(); };
+  v.onclick = (e) => {
+    const b = e.target.closest('button'); if (!b || !v.contains(b)) return;
+    const d = b.dataset;
+    if (d.tag != null) { st.tags = st.tags.includes(d.tag) ? st.tags.filter((t) => t !== d.tag) : [...st.tags, d.tag]; redrawBar(); onChange(); }
+    else if (d.tagmore != null) { st.open = !st.open; redrawBar(); }
+    else if (d.clearq != null) { st.q = ''; $('#q').value = ''; redrawBar(); onChange(); }
+    else if (d.reset != null) { Object.assign(st, { t:'', p:'', k:'', tags:[], sort: st.defSort }); redrawBar(); onChange(); }
+    else if (d.more != null) onMore();
+    else if (v._extra) v._extra(b, e);
+  };
+}
+const moreBtn = (left) => left > 0 ? `<button type="button" class="more" data-more>더 보기 (${left}개 남음)</button>` : '';
+const emptyMsg = (st) => `<p class="msg">조건에 맞는 레시피가 없어요.${filtersOn(st) ? ' <button type="button" class="link" data-reset>필터를 풀어 볼까요?</button>' : ''}</p>`;
+
+// ───────── 머리말(검색 미리보기)과 구조화 데이터 ─────────
+const DEF_META = { title: document.title, desc: $('meta[name="description"]').content, image: $('meta[property="og:image"]').content, url: SITE };
+function setMeta(m = {}) {
+  const v = { ...DEF_META, ...m };
+  document.title = v.title;
+  for (const [s, val] of [['meta[name="description"]', v.desc], ['meta[property="og:title"]', v.title], ['meta[property="og:description"]', v.desc], ['meta[property="og:image"]', v.image],
+    ['meta[property="og:url"]', v.url], ['meta[name="twitter:title"]', v.title], ['meta[name="twitter:description"]', v.desc], ['meta[name="twitter:image"]', v.image]]) {
+    const el = document.querySelector(s); if (el) el.setAttribute('content', val);
+  }
+}
+function setLd(obj) {
+  let s = $('#ld-page');
+  if (!obj) { s?.remove(); return; }
+  if (!s) { s = document.createElement('script'); s.type = 'application/ld+json'; s.id = 'ld-page'; document.head.appendChild(s); }
+  s.textContent = JSON.stringify(obj);
+}
+function recipeLd(id, d) {
+  const { video = {}, recipe: x = {} } = d, n = x.nutrition_per_serving, url = `${SITE}recipes/${id}/`;
+  const thumb = video.thumbnail || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, images = [...new Set([thumb, jpgThumb(thumb)])];
+  const watch = (t) => `https://www.youtube.com/watch?v=${id}${t ? `&t=${t}s` : ''}`;
+  const line = (i) => [i.name, i.qty == null ? (i.unit || '') : fmtQty(i.qty) + (i.unit || '')].filter(Boolean).join(' ');
+  const o = { '@context': 'https://schema.org', '@type': 'Recipe', name: x.title, image: images, description: x.summary || x.title,
+    author: { '@type': 'Person', name: video.channel || '' }, keywords: [x.title, ...(x.tags || [])].join(', '),
+    recipeIngredient: (x.ingredients || []).map(line), url, isBasedOn: watch() };
+  if (d.created_at) o.datePublished = String(d.created_at).slice(0, 10);
+  if (x.cook_minutes) o.totalTime = isoDur(x.cook_minutes * 60);
+  if (x.servings) o.recipeYield = `${x.servings}인분`;
+  if (x.tags?.length) o.recipeCategory = x.tags[0];
+  if (x.steps?.length) o.recipeInstructions = x.steps.map((s, i) => ({ '@type': 'HowToStep', position: i + 1, text: s.text, url: `${url}#step-${i + 1}`,
+    ...(s.start_sec != null ? { video: { '@type': 'Clip', name: `${i + 1}단계`, startOffset: s.start_sec, url: watch(s.start_sec) } } : {}) }));
+  if (n) { o.nutrition = { '@type': 'NutritionInformation', servingSize: '1인분' };
+    for (const [k, f, u] of [['calories', 'kcal', ' kcal'], ['proteinContent', 'protein_g', ' g'], ['carbohydrateContent', 'carbs_g', ' g'], ['fatContent', 'fat_g', ' g']]) if (n[f] != null) o.nutrition[k] = n[f] + u; }
+  if (x.tools?.length) o.tool = x.tools.map((t) => ({ '@type': 'HowToTool', name: t }));
+  o.video = { '@type': 'VideoObject', name: video.title || x.title, description: cut(x.summary || video.title, 300), thumbnailUrl: images,
+    contentUrl: watch(), embedUrl: `https://www.youtube.com/embed/${id}`, ...(video.duration ? { duration: isoDur(video.duration) } : {}) };
+  return o;
+}
+
+// ───────── 첫 화면: 배너 · 카테고리 · 주제별 가로 줄 ─────────
 const priceBadge = (p) => !p ? '' : p <= 3000 ? '3천원 이하' : p <= 5000 ? '5천원 이하' : p <= 10000 ? '만원 이하' : '';
+const facts = (r) => [r.minutes && `⏱ ${r.minutes}분`, r.price && won(r.price), r.kcal && `${r.kcal}kcal`].filter(Boolean).join(' · ');
 const card = (r, badge = '') => `<a class="rc" href="#/r/${r.id}">
-  <div class="th"><img src="${esc(r.thumbnail)}" alt="" loading="lazy">${badge ? `<span class="badge">${esc(badge)}</span>` : ''}</div>
-  <b>${esc(r.title)}</b><small>${esc(r.channel)}</small><small class="vw">▶ ${views(r.views)}</small></a>`;
+  <div class="th"><img src="${esc(r.thumbnail || `https://i.ytimg.com/vi/${r.id}/hqdefault.jpg`)}" alt="" loading="lazy" decoding="async" width="320" height="320">${badge ? `<span class="badge">${esc(badge)}</span>` : ''}</div>
+  <b>${esc(r.title)}</b><small>${esc(r.channel)}</small><small class="vw">▶ ${views(r.views)}</small>${facts(r) ? `<small class="fx">${esc(facts(r))}</small>` : ''}</a>`;
+const ROW_MAX = 15;
 const row = (title, items, badge, more) => !items.length ? '' : `<section class="sec"><div class="sh"><h3>${title}</h3>${more ? `<a href="${more}">더보기 ›</a>` : ''}</div>
-  <div class="hs">${items.map((r) => card(r, badge?.(r))).join('')}</div></section>`;
+  <div class="hs">${items.slice(0, ROW_MAX).map((r) => card(r, badge?.(r))).join('')}</div></section>`;
 const BANNERS = [
   ['#유튜브 레시피', '인기 요리 영상, 레시피로 한눈에', '재료 · 순서 · 영상 시점까지 정리했어요', 'linear-gradient(120deg,#ff5a1f,#ff9a3c)', '#/c/QUICK', '🍳'],
   ['#냉장고 파먹기', '있는 재료로 뭐 해 먹지?', '재료만 넣으면 딱 맞는 레시피를 골라 드려요', 'linear-gradient(120deg,#12b886,#63e6be)', '#/find', '🧊'],
@@ -156,25 +406,29 @@ const BANNERS = [
 // 달마다 바뀌는 제철 재료 기획전
 const SEASON_MAP = { 1:'굴 꼬막 시금치 무 귤', 2:'달래 냉이 굴 딸기 시금치', 3:'냉이 달래 쑥 주꾸미 봄동', 4:'두릅 미나리 주꾸미 바지락 쑥', 5:'마늘쫑 완두콩 멸치 참외 감자', 6:'감자 오이 애호박 매실 옥수수', 7:'옥수수 가지 토마토 수박 오이', 8:'가지 복숭아 전복 고추 옥수수', 9:'전어 대하 버섯 고구마 배', 10:'무 버섯 고구마 대하 사과', 11:'배추 무 굴 고등어 사과', 12:'굴 꼬막 배추 무 귤' };
 const SEASON = { month: new Date().getMonth() + 1, items: SEASON_MAP[new Date().getMonth() + 1].split(' ') };
+const seasonal = (r) => SEASON.items.some((t) => r.ingN.some((n) => ingMatch(t, n)) || r.tags.includes(t) || (t.length > 1 && r.title.includes(t)));
 let bannerTimer;
 async function home() {
-  const list = await (await fetch(LIST_URL)).json();
+  setMeta(); setLd(null);
+  const list = await getList();
   if (!list.length) { $('#view').innerHTML = '<p class="msg">아직 레시피가 없어요.</p>'; return; }
-  const byViews = [...list].sort((a, b) => (b.views || 0) - (a.views || 0));
+  const byV = [...list].sort(byViews);
   const pick = (key) => list.filter(CATS.find((c) => c[0] === key)[3]);
+  const season = list.filter(seasonal);
   $('#view').innerHTML = `
     <div class="banner">${BANNERS.map(([tag, h, p, c, href, emo], i) => `<a class="slide${i ? '' : ' on'}" href="${href}" style="background:${c}" data-emoji="${emo}">
       <span>${tag}</span><b>${h}</b><small>${p}</small></a>`).join('')}<div class="dots">${BANNERS.map((_, i) => `<i class="${i ? '' : 'on'}"></i>`).join('')}</div></div>
     <div class="cats">${CATS.map(([k, ic, name]) => `<a href="#/c/${k}"><span>${ic}</span>${name}</a>`).join('')}</div>
-    ${row('🔥 주간 인기 레시피', byViews.slice(0, 12))}
-    ${row(`🍂 ${SEASON.month}월 제철, ${SEASON.items.slice(0, 3).join(' · ')} 레시피 어때요?`, list.filter((r) => has(r, ...SEASON.items)))}
-    ${row('✅ 유튜브 조회수 100만으로 검증된 레시피', byViews.filter((r) => r.views >= 1e6))}
-    ${row('⏱ 시간이 부족해요, 빠른 20분 완성 레시피', list.filter((r) => r.cook_minutes && r.cook_minutes <= 20).sort((a, b) => a.cook_minutes - b.cook_minutes), (r) => r.cook_minutes + '분', '#/c/QUICK')}
-    ${row('💰 만원 이하 가성비 레시피', pick('CHEAP').sort((a, b) => a.total_price - b.total_price), (r) => priceBadge(r.total_price), '#/c/CHEAP')}
+    <div class="quick"><a href="#/s?t=10&sort=time">⏱ 10분 이하</a><a href="#/s?p=5000&sort=price">💰 5천원 이하</a><a href="#/s?k=500&sort=kcal">🔥 500kcal 이하</a><a href="#/find">🧊 냉장고 재료로 찾기</a><a href="#/s">📖 전체 ${list.length}개 보기</a></div>
+    ${row('🔥 주간 인기 레시피', byV, null, '#/s')}
+    ${row(`🍂 ${SEASON.month}월 제철, ${SEASON.items.slice(0, 3).join(' · ')} 레시피 어때요?`, season, null, season.length > ROW_MAX ? '#/find?i=' + encodeURIComponent(SEASON.items.join(',')) : '')}
+    ${row('✅ 유튜브 조회수 100만으로 검증된 레시피', byV.filter((r) => r.views >= 1e6), null, '#/s')}
+    ${row('⏱ 시간이 부족해요, 빠른 20분 완성 레시피', list.filter((r) => r.minutes && r.minutes <= 20).sort(SORTS.time[1]), (r) => r.minutes + '분', '#/s?t=20&sort=time')}
+    ${row('💰 만원 이하 가성비 레시피', pick('CHEAP').sort(SORTS.price[1]), (r) => priceBadge(r.price), '#/c/CHEAP')}
     ${row('🍜 오늘은 면 요리 어때요?', pick('NOODLE'), null, '#/c/NOODLE')}
     ${row('🌙 출출한 밤, 야식 레시피', pick('LATE'), null, '#/c/LATE')}
     ${row('🥗 가볍게 먹는 다이어트 레시피', pick('DIET'), (r) => r.kcal ? r.kcal + 'kcal' : '', '#/c/DIET')}
-    ${row('🆕 새로 올라온 레시피', list.slice(0, 12))}`;
+    ${row('🆕 새로 올라온 레시피', [...list].sort(SORTS.new[1]), null, '#/s?sort=new')}`;
   clearInterval(bannerTimer);
   let n = 0;
   bannerTimer = setInterval(() => {
@@ -184,52 +438,115 @@ async function home() {
   }, 4000);
 }
 
-async function grid(title, items, badge) {
-  $('#view').innerHTML = `<h2 style="margin:4px 0 14px">${title} <small style="color:var(--sub);font-size:14px">${items.length}개</small></h2>
-    ${items.length ? `<div class="grid2">${items.map((r) => card(r, badge?.(r))).join('')}</div>` : '<p class="msg">아직 이 분류에 맞는 레시피가 없어요.</p>'}`;
-}
-async function category(key) {
-  const c = CATS.find((x) => x[0] === key) || CATS[0];
-  const list = await (await fetch(LIST_URL)).json();
-  grid(`${c[1]} ${c[2]}`, list.filter(c[3]), key === 'CHEAP' ? (r) => priceBadge(r.total_price) : key === 'QUICK' ? (r) => r.cook_minutes + '분' : null);
-}
-async function search(q) {
-  const list = await (await fetch(LIST_URL)).json();
-  const t = q.replace(/\s/g, '');
-  grid(`🔍 '${esc(q)}' 검색 결과`, list.filter((r) => [r.title, r.channel, ...r.ingredients, ...r.tags].some((x) => (x || '').replace(/\s/g, '').includes(t))));
-}
-$('#sf2').onsubmit = (e) => { e.preventDefault(); const q = $('#q').value.trim(); if (q) location.hash = '#/s/' + encodeURIComponent(q); };
-
-const BASIC = '소금 후추 설탕 간장 진간장 국간장 식용유 참기름 들기름 다진마늘 마늘 고춧가루 고추장 된장 식초 물 깨 통깨 미림 맛술 올리고당 물엿 굴소스'.split(' ');
-const norm = (s) => s.replace(/\(.*?\)/g, '').replace(/\s/g, '');
-async function find() {
-  const saved = (() => { try { return JSON.parse(localStorage.getItem('find') || '{}'); } catch { return {}; } })();
-  $('#view').innerHTML = `<div class="box" style="margin-top:0"><h3>냉장고에 있는 재료</h3>
-    <form id="ff"><input id="fi" placeholder="예: 돼지고기, 양파, 두부" value="${esc(saved.q || '')}"><button>찾기</button></form>
-    <label><input type="checkbox" id="fb" ${saved.basic === false ? '' : 'checked'}> 소금·간장·고춧가루 같은 기본 양념은 있어요</label></div><div id="fr"></div>`;
-  const list = await (await fetch(LIST_URL)).json();
-  const show = () => {
-    const terms = $('#fi').value.split(/[,\s]+/).map(norm).filter(Boolean);
-    const basic = $('#fb').checked;
-    try { localStorage.setItem('find', JSON.stringify({ q: $('#fi').value, basic })); } catch {}
-    if (!terms.length) { $('#fr').innerHTML = '<p class="msg" style="margin-top:16px">가진 재료를 쉼표로 넣어 보세요.</p>'; return; }
-    const owned = (name) => { const n = norm(name); return (basic && BASIC.some((b) => n === b || n.endsWith(b))) || terms.some((t) => n.includes(t) || t.includes(n)); };
-    const ranked = list.map((r) => {
-      const have = r.ingredients.filter(owned), miss = r.ingredients.filter((n) => !owned(n));
-      return { ...r, have, miss, score: have.length / (r.ingredients.length || 1) };
-    }).filter((r) => r.have.some((n) => terms.some((t) => norm(n).includes(t) || t.includes(norm(n)))))
-      .sort((a, b) => b.score - a.score || a.miss.length - b.miss.length);
-    $('#fr').innerHTML = ranked.length ? ranked.map((r) => `
-      <a class="box card" style="gap:12px" href="#/r/${r.id}" style="display:flex;gap:12px;padding:12px">
-        <img src="${esc(r.thumbnail)}" alt="" style="width:120px;border-radius:8px;flex:none">
-        <div style="padding:0"><b>${esc(r.title)}</b>
-          <small class="have">있는 재료 ${r.have.length}/${r.ingredients.length} (${Math.round(r.score * 100)}%)</small>
-          ${r.miss.length ? `<small class="miss" style="display:block">더 필요해요: ${r.miss.map(esc).join(', ')}</small>` : '<small class="have" style="display:block">지금 바로 만들 수 있어요!</small>'}
-        </div></a>`).join('') : '<p class="msg" style="margin-top:16px">맞는 레시피가 아직 없어요. 레시피를 더 모아 보세요.</p>';
+// ───────── 목록(전체 · 검색 · 분류): 거르기와 정렬 ─────────
+const badgeFor = (sort, key) => sort === 'time' || key === 'QUICK' ? (r) => r.minutes ? r.minutes + '분' : ''
+  : sort === 'price' || key === 'CHEAP' ? (r) => r.price ? won(r.price) : '' : sort === 'kcal' || key === 'DIET' ? (r) => r.kcal ? r.kcal + 'kcal' : '' : null;
+async function listView(path, params) {
+  const all = await getList();
+  const cat = path.startsWith('/c/') ? CATS.find((c) => c[0] === path.slice(3)) || CATS[0] : null;
+  const st = readFilters(params, cat && CAT_SORT[cat[0]] || 'views');
+  if (!SORTS[st.sort]) st.sort = st.defSort;
+  const base = cat ? all.filter(cat[3]) : all;
+  const heading = cat ? `${cat[1]} ${cat[2]}` : st.q ? `🔍 '${esc(st.q)}' 검색 결과` : '📖 전체 레시피';
+  setMeta({ title: `${cat ? cat[2] + ' 레시피' : st.q ? `'${st.q}' 검색 결과` : '전체 레시피'} | 한입레시피` }); setLd(null);
+  $('#q').value = st.q;
+  $('#view').innerHTML = `<h2 class="ph">${heading}</h2><div class="fbar" id="fbar"></div><div class="rbar" id="rbar"></div><div id="res"></div>`;
+  let shown = PAGE;
+  const sorts = Object.entries(SORTS).map(([k, [t]]) => [k, t]);
+  const bar = () => { $('#fbar').innerHTML = filterBar(st, base, sorts, st.open); };
+  const draw = () => {
+    const items = applyFilters(base, st).sort(SORTS[st.sort][1]), badge = badgeFor(st.sort, cat?.[0]);
+    $('#rbar').innerHTML = `<span><b>${items.length}개</b> 레시피${items.length !== base.length ? ` <small>(전체 ${base.length}개 중)</small>` : ''}</span>${filtersOn(st) || st.q ? '<button type="button" class="link" data-reset data-all>모두 초기화</button>' : ''}`;
+    $('#res').innerHTML = items.length ? `<div class="grid2">${items.slice(0, shown).map((r) => card(r, badge?.(r))).join('')}</div>${moreBtn(items.length - shown)}`
+      : base.length ? emptyMsg(st) : '<p class="msg">아직 이 분류에 맞는 레시피가 없어요.</p>';
   };
-  $('#ff').onsubmit = (e) => { e.preventDefault(); show(); };
-  $('#fb').onchange = show;
-  show();
+  bindFilters(st, bar, () => { shown = PAGE; setHash(path, filterParams(st)); draw(); }, () => { shown += PAGE; draw(); });
+  const reset = $('#view').onclick;
+  $('#view').onclick = (e) => { if (e.target.closest('[data-all]')) { st.q = ''; $('#q').value = ''; } reset(e); };
+  bar(); draw();
+}
+$('#sf2').onsubmit = (e) => {
+  e.preventDefault(); const q = $('#q').value.trim();
+  location.hash = q ? '#/s?' + new URLSearchParams({ q }) : '#/s';
+  $('#q').blur();
+};
+
+// ───────── 냉장고 재료로 찾기: 재료 여러 개 + 거르기 + 정렬 ─────────
+async function find(params) {
+  setMeta({ title: '냉장고 재료로 레시피 찾기 | 한입레시피', desc: '냉장고에 있는 재료를 여러 개 넣으면 바로 만들 수 있는 유튜브 레시피를 골라 드려요. 조리 시간·재료비·칼로리로도 거를 수 있어요.' }); setLd(null);
+  const all = await getList();
+  const saved = store.get('find', {});
+  const fromUrl = params.has('i');
+  const split = (s) => [...new Set(String(s || '').split(/[,，\n\s]+/).map((x) => x.trim()).filter(Boolean))];
+  const st = readFilters(params, 'match');
+  Object.assign(st, {
+    i: fromUrl ? split(params.get('i')) : Array.isArray(saved.i) ? saved.i : split(saved.q),
+    basic: params.has('basic') ? params.get('basic') !== '0' : saved.basic !== false,
+    allIn: fromUrl ? params.get('all') === '1' : !!saved.allIn,
+  });
+  if (!fromUrl && saved.f) Object.assign(st, saved.f);
+  const freq = new Map();
+  for (const r of all) for (const n of new Set(r.ingredients.map((x) => x.replace(/\(.*?\)/g, '').trim()))) if (!isBasic(norm(n)) && n.length <= 8) freq.set(n, (freq.get(n) || 0) + 1);
+  const popular = [...freq].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko')).slice(0, 14).map(([n]) => n);
+  $('#view').innerHTML = `<div class="box" style="margin-top:0"><h3>🧊 냉장고에 있는 재료</h3>
+    <form id="ff" class="ibox"><span id="ich" style="display:contents"></span><input id="fi" placeholder="예: 돼지고기, 양파, 두부" autocomplete="off" enterkeyhint="enter" aria-label="가진 재료"><button type="submit">추가</button></form>
+    <div class="sugg"><span>자주 쓰는 재료</span>${popular.map((n) => `<button type="button" class="chip" data-add="${esc(n)}">+ ${esc(n)}</button>`).join('')}</div>
+    <label><input type="checkbox" id="fb" ${st.basic ? 'checked' : ''}> 소금·간장·고춧가루 같은 기본 양념은 있어요</label>
+    <label><input type="checkbox" id="fall" ${st.allIn ? 'checked' : ''}> 넣은 재료가 모두 들어간 레시피만</label></div>
+    <div class="fbar" id="fbar" style="margin-top:14px"></div><div class="rbar" id="rbar"></div><div id="fr"></div>`;
+  const sorts = [['match', '내 재료와 많이 맞는 순'], ...Object.entries(SORTS).map(([k, [t]]) => [k, t])];
+  if (!sorts.some(([k]) => k === st.sort)) st.sort = 'match';
+  let shown = PAGE;
+  const chips = () => { $('#ich').innerHTML = st.i.map((n, k) => `<span class="ing-chip">${esc(n)}<button type="button" class="x" data-del="${k}" aria-label="${esc(n)} 빼기">×</button></span>`).join(''); };
+  const bar = () => { $('#fbar').innerHTML = filterBar({ ...st, q: '' }, all, sorts, st.open); };
+  const save = () => {
+    store.set('find', { i: st.i, basic: st.basic, allIn: st.allIn, f: { t: st.t, p: st.p, k: st.k, tags: st.tags, sort: st.sort } });
+    const p = filterParams({ ...st, q: '' });
+    if (st.i.length) p.set('i', st.i.join(','));
+    if (!st.basic) p.set('basic', '0');
+    if (st.allIn) p.set('all', '1');
+    setHash('/find', p);
+  };
+  const draw = () => {
+    const terms = st.i.map(norm).filter(Boolean);
+    if (!terms.length) { $('#rbar').innerHTML = ''; $('#fr').innerHTML = '<p class="msg" style="margin-top:6px">가진 재료를 넣어 보세요. 위의 자주 쓰는 재료를 눌러도 돼요.</p>'; return; }
+    const owned = (n) => (st.basic && isBasic(n)) || terms.some((t) => ingMatch(t, n));
+    const ranked = applyFilters(all, { ...st, q: '' }).map((r) => {
+      const used = terms.filter((t) => r.ingN.some((n) => ingMatch(t, n)));
+      const miss = r.ingredients.filter((_, k) => !owned(r.ingN[k]));
+      const total = r.ingredients.length || 1;
+      return { r, used, miss, have: total - miss.length, total, score: (total - miss.length) / total };
+    }).filter((m) => st.allIn ? m.used.length === terms.length : m.used.length > 0);
+    ranked.sort(st.sort === 'match' ? (a, b) => b.score - a.score || a.miss.length - b.miss.length || b.used.length - a.used.length || byViews(a.r, b.r) : (a, b) => SORTS[st.sort][1](a.r, b.r));
+    $('#rbar').innerHTML = `<span><b>${ranked.length}개</b> 레시피를 찾았어요</span>${filtersOn(st) ? '<button type="button" class="link" data-reset>필터 초기화</button>' : ''}`;
+    $('#fr').innerHTML = ranked.length ? `<div class="flist">${ranked.slice(0, shown).map(({ r, used, miss, have, total, score }) => `
+      <a class="fcard" href="#/r/${r.id}"><img src="${esc(r.thumbnail || `https://i.ytimg.com/vi/${r.id}/hqdefault.jpg`)}" alt="" loading="lazy" decoding="async" width="120" height="120">
+        <div class="fc"><b>${esc(r.title)}</b>
+          <small class="have">있는 재료 ${have}/${total} (${Math.round(score * 100)}%) · 내 재료 ${used.length}개 사용</small>
+          <div class="meter" aria-hidden="true"><i style="width:${Math.round(score * 100)}%"></i></div>
+          ${miss.length ? `<small class="miss">더 필요해요: ${esc(miss.slice(0, 6).join(', '))}${miss.length > 6 ? ` 외 ${miss.length - 6}개` : ''}</small>` : '<small class="have"><b>지금 바로 만들 수 있어요!</b></small>'}
+          ${facts(r) ? `<small class="fx">${esc(facts(r))}</small>` : ''}
+        </div></a>`).join('')}</div>${moreBtn(ranked.length - shown)}`
+      : `<p class="msg">맞는 레시피가 아직 없어요.${st.allIn ? ' ‘모두 들어간 레시피만’을 끄거나' : ''}${filtersOn(st) ? ' 필터를 풀거나' : ''} 다른 재료를 넣어 보세요.</p>`;
+  };
+  const changed = () => { shown = PAGE; save(); draw(); };
+  const add = (text, whole) => { const add = (whole ? [text] : split(text)).filter((n) => !st.i.some((o) => norm(o) === norm(n))); if (!add.length) return; st.i.push(...add); chips(); changed(); };
+  bindFilters(st, bar, changed, () => { shown += PAGE; draw(); });
+  $('#view')._extra = (b) => {
+    if (b.dataset.del != null) { st.i.splice(+b.dataset.del, 1); chips(); changed(); $('#fi').focus(); }
+    else if (b.dataset.add != null) add(b.dataset.add, true);
+  };
+  $('#ff').onsubmit = (e) => { e.preventDefault(); add($('#fi').value); $('#fi').value = ''; };
+  $('#fi').oninput = (e) => { const v = e.target.value; if (/[,，]/.test(v)) { const parts = v.split(/[,，]/); add(parts.slice(0, -1).join(',')); e.target.value = parts.at(-1).trimStart(); } };
+  $('#fi').onkeydown = (e) => { if (e.key === 'Backspace' && !e.target.value && st.i.length) { st.i.pop(); chips(); changed(); } };
+  $('#fi').onblur = (e) => { if (e.target.value.trim()) { add(e.target.value); e.target.value = ''; } };
+  const viewChange = $('#view').onchange;
+  $('#view').onchange = (e) => {
+    if (e.target.id === 'fb') { st.basic = e.target.checked; changed(); }
+    else if (e.target.id === 'fall') { st.allIn = e.target.checked; changed(); }
+    else viewChange(e);
+  };
+  chips(); bar(); draw();
 }
 
 async function settings() {
@@ -253,48 +570,77 @@ async function settings() {
   };
 }
 
+// ───────── 레시피 상세 ─────────
 async function detail(id) {
-  const r = await fetch(ONE_URL(id));
-  if (!r.ok) { $('#view').innerHTML = '<p class="msg err">레시피를 찾을 수 없어요.</p>'; return; }
-  const { video, recipe: x, coupang_affiliate: aff } = await r.json();
-  let serv = x.servings || 1;
+  const res = await fetch(ONE_URL(id));
+  if (!res.ok) { setMeta({ title: '레시피를 찾을 수 없어요 | 한입레시피' }); setLd(null); $('#view').innerHTML = '<p class="msg err">레시피를 찾을 수 없어요. <a href="#/s">전체 레시피 보기</a></p>'; return; }
+  const data = await res.json();
+  const { video = {}, recipe: x = {}, coupang_affiliate: aff } = data;
+  const ings = x.ingredients || [], steps = x.steps || [], tags = x.tags || [], n = x.nutrition_per_serving;
+  const base = x.servings || 1;
+  let serv = base;
+  const sum0 = ings.reduce((a, i) => a + (i.price_krw || 0), 0);
+  const thumb = video.thumbnail || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+  setMeta({ title: `${x.title} 레시피 - 재료·만드는 법 | 한입레시피`, image: jpgThumb(thumb), url: `${SITE}recipes/${id}/`,
+    desc: cut(`${x.summary || ''} ${[x.cook_minutes && `조리 ${x.cook_minutes}분`, x.servings && `${x.servings}인분`, sum0 && `재료비 약 ${won(sum0)}`, n?.kcal && `1인분 ${n.kcal}kcal`].filter(Boolean).join(' · ')}`, 155) });
+  setLd(recipeLd(id, data));
   const play = (s) => { $('#yt').src = `https://www.youtube.com/embed/${id}?start=${s}&autoplay=1`; $('#yt').scrollIntoView({ behavior:'smooth', block:'center' }); };
   const ingr = () => {
-    const k = serv / (x.servings || 1);
-    const total = x.ingredients.reduce((a, i) => a + (i.price_krw || 0) * k, 0);
-    return `<div class="serv"><button data-d="-1">−</button><b>${serv}인분</b><button data-d="1">+</button>
+    const k = serv / base;
+    const total = ings.reduce((a, i) => a + (i.price_krw || 0) * k, 0);
+    return `<div class="serv"><button type="button" data-d="-1" aria-label="인분 줄이기">−</button><b>${serv}인분</b><button type="button" data-d="1" aria-label="인분 늘리기">+</button>
       <span style="margin-left:auto">약 <span class="total">${won(total)}</span></span></div>
-      ${x.ingredients.map((i) => `<div class="row"><span>${esc(i.name)}</span><em>${i.qty == null ? esc(i.unit || '적당량') : fmtQty(i.qty * k) + esc(i.unit || '')}${i.price_krw ? ' · ' + won(i.price_krw * k) : ''}<a class="buy" href="${esc(i.coupang_url)}" target="_blank" rel="noopener sponsored">쿠팡</a></em></div>`).join('')}
+      ${ings.map((i) => `<div class="row ing"><span class="nm">${esc(i.name)}</span><em>${i.qty == null ? esc(i.unit || '적당량') : fmtQty(i.qty * k) + esc(i.unit || '')}${i.price_krw ? '&nbsp;· ' + won(i.price_krw * k) : ''}${i.coupang_url ? `<a class="buy" href="${esc(i.coupang_url)}" target="_blank" rel="noopener sponsored">쿠팡</a>` : ''}</em></div>`).join('')}
       <p class="note">가격은 AI가 추정한 마트 기준 대략값이에요.</p>
       ${aff ? '<p class="note">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>' : ''}`;
   };
   $('#view').innerHTML = `
-    <div class="video"><iframe id="yt" src="https://www.youtube.com/embed/${id}" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-    <h2 style="margin:14px 0 4px">${esc(x.title)}</h2>
-    <p style="margin:0 0 10px;color:var(--sub)">${esc(video.channel)} · ${views(video.views)} — ${esc(x.summary)}</p>
-    <div class="meta">${x.cook_minutes ? `<span>⏱ ${x.cook_minutes}분</span>` : ''}${(x.tools||[]).map((t) => `<span>🍳 ${esc(t)}</span>`).join('')}${(x.tags||[]).map((t) => `<span>#${esc(t)}</span>`).join('')}</div>
+    <div class="video"><iframe id="yt" src="https://www.youtube.com/embed/${id}" title="${esc(x.title)} 영상 (유튜브)" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="dtitle"><h2>${esc(x.title)}</h2><button type="button" class="share" data-share>🔗 공유</button></div>
+    <p style="margin:0 0 10px;color:var(--sub)">${esc(video.channel)} · ${views(video.views)}${x.summary ? ' — ' + esc(x.summary) : ''}</p>
+    <div class="meta">${x.cook_minutes ? `<span class="hl">⏱ ${x.cook_minutes}분</span>` : ''}${x.servings ? `<span class="hl">🍽 ${x.servings}인분</span>` : ''}${sum0 ? `<span class="hl">💰 약 ${won(sum0)}</span>` : ''}${n?.kcal ? `<span class="hl">🔥 ${n.kcal}kcal</span>` : ''}${(x.tools || []).map((t) => `<span>🍳 ${esc(t)}</span>`).join('')}${tags.map((t) => `<a href="#/s?${new URLSearchParams({ tag: t })}">#${esc(t)}</a>`).join('')}</div>
     <div class="box"><h3>재료</h3><div id="ingr">${ingr()}</div></div>
-    <div class="box"><h3>만드는 법</h3>${x.steps.map((s, i) => `<div class="step"><div class="n">${i+1}</div><div>
-      ${s.start_sec != null ? `<button class="t" data-s="${s.start_sec}">▶ ${mmss(s.start_sec)}</button>` : ''}
-      <div>${esc(s.text)}</div><div class="chips">${(s.ingredients||[]).map((n) => `<span>${esc(n)}</span>`).join('')}</div></div></div>`).join('')}</div>
+    <div class="box"><h3>만드는 법</h3>${steps.length ? steps.map((s, i) => `<div class="step" id="step-${i + 1}"><div class="n">${i + 1}</div><div>
+      ${s.start_sec != null ? `<button type="button" class="t" data-s="${s.start_sec}">▶ ${mmss(s.start_sec)}</button>` : ''}
+      <div>${esc(s.text)}</div><div class="chips">${(s.ingredients || []).map((g) => `<span>${esc(g)}</span>`).join('')}</div></div></div>`).join('') : '<p class="note">단계별 순서가 따로 정리되지 않았어요. 위 영상에서 과정을 확인해 주세요.</p>'}</div>
     ${x.tips?.length ? `<div class="box"><h3>요리 팁</h3>${x.tips.map((t) => `<div class="row"><span>💡 ${esc(t)}</span></div>`).join('')}</div>` : ''}
-    ${x.nutrition_per_serving ? `<div class="box"><h3>영양성분 <small style="color:var(--sub);font-weight:400">1인분 · 추정</small></h3><div class="meta">
-      <span>${x.nutrition_per_serving.kcal}kcal</span><span>단백질 ${x.nutrition_per_serving.protein_g}g</span><span>탄수화물 ${x.nutrition_per_serving.carbs_g}g</span><span>지방 ${x.nutrition_per_serving.fat_g}g</span></div></div>` : ''}
-    <p class="note">영상은 유튜브 공식 플레이어로 재생돼요.</p>`;
-  $('#view').onclick = (e) => {
-    const d = e.target.dataset;
+    ${n ? `<div class="box"><h3>영양성분 <small style="color:var(--sub);font-weight:400">1인분 · 추정</small></h3><div class="meta">
+      ${[['', n.kcal, 'kcal'], ['단백질 ', n.protein_g, 'g'], ['탄수화물 ', n.carbs_g, 'g'], ['지방 ', n.fat_g, 'g']].filter((v) => v[1] != null).map(([k, v, u]) => `<span>${k}${v}${u}</span>`).join('')}</div></div>` : ''}
+    <p class="note">영상은 유튜브 공식 플레이어로 재생돼요.</p>
+    <div id="rel"></div>`;
+  $('#view').onclick = async (e) => {
+    const b = e.target.closest('button'); if (!b) return;
+    const d = b.dataset;
     if (d.d) { serv = Math.max(1, serv + +d.d); $('#ingr').innerHTML = ingr(); }
     if (d.s) play(+d.s);
+    if (d.share != null) {
+      const url = `${SITE}recipes/${id}/`;
+      try { if (navigator.share) await navigator.share({ title: `${x.title} 레시피`, url }); else { await navigator.clipboard.writeText(url); toast('링크를 복사했어요'); } }
+      catch (err) { if (err?.name !== 'AbortError') toast('링크: ' + url); }
+    }
   };
+  // 태그가 겹치는 다른 레시피
+  try {
+    const list = await getList();
+    const rel = list.filter((o) => o.id !== id).map((o) => ({ o, n: o.tags.filter((t) => tags.includes(t)).length })).filter((s) => s.n)
+      .sort((a, b) => b.n - a.n || byViews(a.o, b.o)).map((s) => s.o);
+    if ($('#rel')) $('#rel').innerHTML = row('🍳 이런 레시피는 어때요?', rel.length >= 3 ? rel : [...rel, ...[...list].sort(byViews).filter((o) => o.id !== id && !rel.includes(o))].slice(0, 8));
+  } catch {}
 }
 
 const route = () => {
-  const h = location.hash, m = h.match(/^#\/r\/([\w-]{11})/), c = h.match(/^#\/c\/(\w+)/), s = h.match(/^#\/s\/(.+)/);
-  const isFind = h === '#/find', isSet = h === '#/settings', isHome = !m && !c && !s && !isFind && !isSet;
-  document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('on', a.dataset.nav === (isFind ? 'find' : isSet ? 'set' : isHome ? 'home' : '')));
+  const [path, qs = ''] = location.hash.replace(/^#/, '').split('?');
+  const params = new URLSearchParams(qs);
+  const legacy = path.match(/^\/s\/(.+)/); // 예전 주소 #/s/검색어
+  if (legacy) { setHash('/s', new URLSearchParams({ q: decodeURIComponent(legacy[1]) })); return route(); }
+  const m = path.match(/^\/r\/([\w-]{11})/), isList = path === '/s' || path === '/all' || /^\/c\/\w+/.test(path);
+  const isFind = path === '/find', isSet = path === '/settings' && !STATIC, isHome = !m && !isList && !isFind && !isSet;
+  document.querySelectorAll('[data-nav]').forEach((a) => a.classList.toggle('on', a.dataset.nav === (isFind ? 'find' : isSet ? 'set' : isHome ? 'home' : path === '/s' || path === '/all' ? 'all' : '')));
   $('#f').hidden = STATIC || !isHome; $('#n-set').hidden = STATIC;
   $('#view').className = m ? 'narrow' : '';
-  (m ? detail(m[1]) : c ? category(c[1]) : s ? search(decodeURIComponent(s[1])) : isFind ? find() : isSet ? settings() : home()).catch((e) => say(e.message, true)); scrollTo(0, 0);
+  const v = $('#view'); v.onclick = v.onchange = v._extra = null; say('');
+  if (!isList) $('#q').value = '';
+  (m ? detail(m[1]) : isList ? listView(path, params) : isFind ? find(params) : isSet ? settings() : home()).catch((e) => say(e.message, true)); scrollTo(0, 0);
 };
 addEventListener('hashchange', route); route();
 </script>
