@@ -76,7 +76,6 @@
 - [대파 듬뿍 알배추 물김치 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/7SofAEBSPAw/): 소금물로 1시간 절인 알배추에 배 · 양파 · 마늘을 갈아 거른 국물과 불린 고춧가루물을 붓고 대파를 듬뿍 넣어 시원하게 익히는 물김치. (150분 · 20인분 · 약 17,150원 · 30kcal · 원작 김대석 셰프TV)
 - [집에서 만드는 찜닭 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/kfGi3rTct8c/): 간장 · 맛술 · 설탕 양념에 닭을 먼저 익히고 감자 · 고구마 · 떡 · 당면을 차례로 넣어 졸이는 배달 맛 찜닭. (60분 · 4인분 · 약 17,950원 · 720kcal · 원작 백종원 PAIK JONG WON)
 - [채소 듬뿍 클럽샌드위치 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/lG6UdeKjmcQ/): 버터에 구운 식빵 3장 사이에 머스타드 소스, 로메인·양상추, 토마토, 햄, 반숙 계란, 치즈를 층층이 쌓고 랩으로 단단히 싸서 자르는 샌드위치. (25분 · 2인분 · 약 5,820원 · 390kcal · 원작 매일맛나 delicious day)
-- [토막 오이소박이 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/uVs5L7iWBJs/): 칼집 대신 오이를 큼직하게 토막 내 소금물에 절이고, 부추·무를 넣은 되직한 양념에 버무려 먹기 편하게 만든 오이소박이. (40분 · 10인분 · 약 12,600원 · 45kcal · 원작 딸을 위한 레시피 Recipes for daughters)
 - [쫀득 윤기 연근조림 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/-yXC_06qwu8/): 연근을 압력솥에 짧게 삶아 기름으로 코팅한 뒤 간장·흑설탕으로 졸이고, 물엿을 넣어 오래 졸여 쪼글쪼글 쫀득하게 만드는 연근조림. (50분 · 6인분 · 약 8,040원 · 170kcal · 원작 [윤이련]50년 요리비결)
 - [명절 소갈비찜 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/PjMWHZ3ubsQ/): 핏물 뺀 소갈비를 간장 · 맛술 · 생강 양념에 1시간 끓여 부드럽게 익히고 무 → 당근 · 버섯 → 양파 → 고추 순으로 넣어 졸이는 갈비찜. (100분 · 6인분 · 약 80,220원 · 780kcal · 원작 백종원 PAIK JONG WON)
 - [소고기 떡만둣국 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/At-u3lwsFtk/): 사골 육수 대신 소고기를 참기름에 기름이 녹아 나올 때까지 볶아 국물을 내고, 국간장·액젓으로 간한 떡만둣국. (40분 · 4인분 · 약 13,100원 · 560kcal · 원작 백종원 PAIK JONG WON)
@@ -109,12 +108,9 @@
 - [닭볶음탕 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/pNtwZuhYQeg/): 닭 한 마리에 감자, 양파, 대파를 넣고 간장 밑간 후 양념을 풀어 15분 만에 끓여내는 정호영식 닭볶음탕입니다. 만 원 이내로 4인 가족이 푸짐하게 먹을 수 있습니다. (15분 · 4인분 · 약 15,300원 · 620kcal · 원작 정호영의 오늘도 요리 Kitchen Caden)
 - [다진 스팸볶음 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/MyBA_aC4pKM/): 스팸을 손으로 으깨 양파와 고슬고슬하게 볶고 간장·고춧가루로 간한 밥도둑 반찬. (10분 · 3인분 · 약 5,860원 · 420kcal · 원작 이 남자의 cook)
 - [콜라 간장 수육 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/Od4EMMwKKxs/): 돼지고기를 콜라와 그 3분의 1 양의 간장에 마늘·대파·통후추를 넣고 삶아 잡내 없이 부드럽고 색이 고운 수육. (60분 · 4인분 · 약 23,250원 · 680kcal · 원작 이 남자의 cook)
-- [밀가루 안 묻히는 동그랑땡 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/NaEgKSTvXNw/): 밑간한 다진 돼지고기에 물기 짠 두부와 다진 채소, 흰자, 밀가루를 함께 치대 반죽하고, 밀가루 묻히는 단계 없이 바로 계란물만 입혀 부친다. (60분 · 6인분 · 약 12,900원 · 330kcal · 원작 딸을 위한 레시피 Recipes for daughters)
-- [묵은지 들기름볶음 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/voO7XqucReo/): 소를 턴 묵은지를 찢어 설탕·마늘·참치액·들기름으로 밑간한 뒤 기름에 볶고 물을 조금 부어 푹 무르게 익힌 만능 반찬. (25분 · 6인분 · 약 5,350원 · 110kcal · 원작 딸을 위한 레시피 Recipes for daughters)
 - [다시마 콩나물무침 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/qT07czBXHe8/): 콩나물을 소금 없이 적은 물과 다시마로 뚜껑 덮어 3분 찌듯 삶고, 참기름으로 먼저 코팅한 뒤 참치액·맛소금으로 무치는 아삭한 무침. (15분 · 4인분 · 약 2,980원 · 100kcal · 원작 요리왕비룡 셰프TV)
 - [간짜장식 짜파게티 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/VqCnfyPByBc/): 대파 기름에 마늘·삼겹살을 볶고 양파·애호박을 살짝 익혀 짜파게티 스프로 양념을 만든 뒤, 덜 익힌 면을 넣고 센 불에 볶는 간짜장 스타일. (20분 · 2인분 · 약 6,200원 · 920kcal · 원작 맛연사)
 - [7분 참치김치찌개 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/2ebjEWk4E4I/): 김치를 고추장·간장·참치 기름에 센불로 볶아 수분을 날린 뒤 끓여 7분 만에 완성하는 참치김치찌개. (10분 · 2인분 · 약 6,270원 · 320kcal · 원작 이 남자의 cook)
-- [순두부 계란탕 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/SgbK5INDgA8/): 참치액으로 간한 국물에 순두부를 떠 넣고 계란물을 젓지 않고 익혀 몽글몽글하게 끓이는 5분 국. (5분 · 2인분 · 약 3,220원 · 190kcal · 원작 딸을 위한 레시피 Recipes for daughters)
 - [대패삼겹 불맛 짬뽕라면 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/YISYMu2Txp4/): 대패삼겹살과 양파·대파·양배추를 센불에 볶다 팬 가장자리에 간장을 눌려 불맛을 내고, 고춧가루를 볶아 물과 라면을 넣는 해물 없는 짬뽕라면. (25분 · 5인분 · 약 13,700원 · 820kcal · 원작 백종원 PAIK JONG WON)
 - [돼지고기 고추장찌개 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/B2s5seuBCn0/): 돼지고기에 새우젓과 고추장을 넣고 물을 조금씩 부어 졸이며 간을 배게 한 뒤 끓이는 고추장찌개. (30분 · 3인분 · 약 7,450원 · 300kcal · 원작 백종원 PAIK JONG WON)
 - [초간단 야식 비빔국수 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/sVVBjEwq3Rc/): 고추장·고운 고춧가루·식초·물엿에 다진 파·마늘과 으깬 깨를 넣은 양념을 만들고, 전분을 씻어 낸 소면을 바로 비비는 2인분 비빔국수. (15분 · 2인분 · 약 3,180원 · 560kcal · 원작 이 남자의 cook)
@@ -161,7 +157,6 @@
 - [스팸 마요 주먹밥 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/uAm6L_6g7pY/): 잘게 썬 스팸과 채소를 간장·설탕으로 볶고 스크램블 계란, 마요네즈, 김가루와 함께 밥에 섞어 한입 크기로 뭉치는 도시락용 주먹밥. (20분 · 2인분 · 약 7,780원 · 720kcal · 원작 소소황 Cook & Eat)
 - [멥쌀 단호박죽 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/EduS-bdu1lk/): 찹쌀가루 대신 불린 멥쌀을 갈아 넣고, 쪄서 간 단호박·늙은호박에 삶은 콩을 더해 든든하게 쑤는 호박죽. (50분 · 4인분 · 약 8,160원 · 310kcal · 원작 [윤이련]50년 요리비결)
 - [얼큰 장칼국수 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/IRPxT0EgqMY/): 멸치·다시마 육수에 고추장과 된장을 1:1로 풀고 고춧가루로 칼칼함을 더해 감자·애호박과 면을 끓이는 장칼국수. (30분 · 2인분 · 약 6,820원 · 620kcal · 원작 이 남자의 cook)
-- [올리브유 마늘 브로콜리무침 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/nL41mkmg2Qg/): 밀가루물에 담가 깨끗이 씻은 브로콜리를 넉넉한 소금물에 1분 데쳐 펼쳐 식히고, 데친 마늘과 함께 올리브유·통깨로 무친다. (20분 · 3인분 · 약 3,660원 · 120kcal · 원작 딸을 위한 레시피 Recipes for daughters)
 - [베이컨 새우 토마토 파스타 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/4qYZuxc-8KY/): 마늘·베이컨·양파를 올리브유에 볶아 시판 토마토소스와 끓이고, 80% 삶은 면과 새우를 넣어 센 불에 버무리는 간단한 연말 파스타. (20분 · 2인분 · 약 9,500원 · 680kcal · 원작 소소황 Cook & Eat)
 - [쌀뜨물 청국장찌개 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/6dVrtQ-W9fk/): 들기름에 돼지고기를 볶아 기름을 낸 뒤 멸치 육수 대신 쌀뜨물로 끓여 뒷맛이 부드러운 청국장찌개. (25분 · 2인분 · 약 5,880원 · 330kcal · 원작 김대석 셰프TV)
 - [간장 계란후라이덮밥 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/_8PabBW-c8U/): 파·양파·마늘을 기름에 볶아 향을 낸 위에 계란을 올려 굽고, 팬 가장자리에 간장을 둘러 눌린 뒤 들기름과 깨로 마무리해 밥에 얹는 덮밥. (10분 · 1인분 · 약 3,350원 · 880kcal · 원작 밥상차려주는남자)
@@ -172,7 +167,6 @@
 - [깻잎 연겨자 쫄면 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/sTlUvuYz4co/): 고추장에 연겨자·깻잎·사이다를 넣어 믹서에 간 양념장을 하루 숙성하고, 살짝 심이 남게 삶은 쫄면에 찐 콩나물·채소·과일을 올려 비비는 쫄면. (40분 · 3인분 · 약 19,830원 · 780kcal · 원작 쿡피아 Cookpia)
 - [카레가루 춘천 닭갈비 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/YuSBnZi89MM/): 간 양파를 바탕으로 한 고추장 양념에 카레가루 한 숟갈을 더해 감칠맛을 살리고, 고구마·감자·양배추·떡과 함께 볶는 춘천식 닭갈비. (35분 · 3인분 · 약 17,550원 · 620kcal · 원작 이 남자의 cook)
 - [옛날 탕수육 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/MtqZekQbE_0/): 밑간한 돼지고기에 흰자와 감자전분을 꾹꾹 눌러 입혀 바삭하게 튀기고, 간장·설탕·식초로 새콤달콤한 채소 소스를 끓여 붓는 옛날식 탕수육. (40분 · 3인분 · 약 13,065원 · 520kcal · 원작 밥상차려주는남자)
-- [즉석밥 동지팥죽 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/5M4UHvsz_4s/): 팥을 한 번 데쳐 아린 맛을 빼고 푹 삶아 믹서에 간 뒤, 새알심과 헹군 즉석밥을 넣어 간편하게 끓이는 동지팥죽. (100분 · 6인분 · 약 9,910원 · 380kcal · 원작 딸을 위한 레시피 Recipes for daughters)
 - [계란 치즈 스팸무스비 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/gwMKwm6Ih9Y/): 참기름 한 방울 섞은 밥 사이에 노릇하게 구운 스팸, 치즈, 모양 잡아 부친 계란을 쌓고 김으로 감싸는 동그란 밥버거 스타일 무스비. (15분 · 2인분 · 약 5,800원 · 620kcal · 원작 하루한끼 one meal a day)
 - [오트밀 계란전 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/lPhwVe-GJSQ/): 볶은 오트밀을 계란과 우유에 불린 뒤 양파, 토마토 스파게티소스, 감자전분을 섞어 중약불에 두 장으로 부치는 밥 대용 전. (20분 · 2인분 · 약 2,520원 · 420kcal · 원작 김대석 셰프TV)
 - [달임장 소고기 떡갈비 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/MRRbsQ6H3_s/): 볶아 단맛을 낸 양파·대파를 소·돼지 다짐육과 찹쌀가루에 섞어 빚고, 중약불에 구우며 간장·굴소스 달임장을 끼얹어 윤기를 낸 떡갈비. (50분 · 4인분 · 약 13,280원 · 520kcal · 원작 김대석 셰프TV)
@@ -182,7 +176,6 @@
 - [멸치육수 매생이굴국 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/-7QAr_w2pwE/): 매생이를 두 번만 헹궈 바다향을 살리고, 진한 멸치·다시마 육수에 매생이와 생굴을 차례로 넣어 소금으로 깔끔하게 간한 국. (30분 · 3인분 · 약 11,360원 · 130kcal · 원작 김대석 셰프TV)
 - [에어프라이어 간장 구운치킨 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/bIDz2PowTIs/): 우유에 재워 잡내를 뺀 생닭에 칼집을 내고 간장·마늘가루·올리고당 양념에 버무려 180도 에어프라이어에 30분 굽는 치킨. (50분 · 3인분 · 약 9,940원 · 590kcal · 원작 라방스쿨 live school)
 - [유자간장 밀푀유나베 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/1tdlUDJIgtI/): 알배기배추·깻잎·소고기를 겹겹이 쌓아 썰어 냄비에 둘러 담고, 다시마·표고 육수를 부어 끓인 뒤 유자청 간장 소스에 찍어 먹는 전골. (40분 · 3인분 · 약 18,290원 · 330kcal · 원작 김대석 셰프TV)
-- [시래기 된장지짐 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/lWdrMYBh42Y/): 삶은 무청을 된장·들기름 양념에 무쳐 멸치와 함께 볶다가 물을 부어 은근히 졸이는 겨울 반찬. (40분 · 4인분 · 약 5,600원 · 120kcal · 원작 딸을 위한 레시피 Recipes for daughters)
 - [삼색 채소 유부초밥 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/TentD4SDYM8/): 직접 끓인 단촛물로 밥을 새콤하게 간하고, 참기름에 볶은 양파·당근·애호박과 게맛살, 검은깨를 섞어 시판 유부에 채우는 유부초밥. (30분 · 3인분 · 약 9,480원 · 450kcal · 원작 엄마의손맛)
 - [전자레인지 치즈케이크 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/b3U2ksqB5BE/): 크림치즈에 설탕, 계란, 휘핑크림, 박력분, 레몬즙을 한 볼에서 섞어 전자레인지에 3분 돌린 뒤 차게 식히는 초간단 케이크. (10분 · 3인분 · 약 3,980원 · 355kcal · 원작 뚤기ddulgi)
 - [에어프라이어 군고구마 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/recipes/GT7tXc2y5x8/): 씻은 고구마를 180도에서 속까지 익힌 뒤 200도로 올려 한 번 더 구워 달고 진한 군고구마를 만든다. (85분 · 4인분 · 약 6,000원 · 330kcal · 원작 룰루요리 Lulu's cooking)
@@ -199,20 +192,20 @@
 
 ## 모음글
 
-- [만원 이하 가성비 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/under-10000-won/): 재료비 합계(마트 가격 기준 추정)가 1만 원 이하인 레시피 130개를 싼 순서로 모았어요. 가장 저렴한 전자레인지 간장계란밥은 재료를 모두 사도 약 1,120원이에요. 가격은 대략값이라 사는 곳과 시기에 따라 달라질 수 있어요.
-- [20분 이내 빠른 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/quick-20-minutes/): 조리 시간이 20분 이내인 레시피 90개를 빠른 순서로 모았어요. 가장 빠른 원팬 계란 토스트는 약 5분이면 완성돼요. 조리 시간은 영상 내용을 바탕으로 정리한 값이에요.
+- [만원 이하 가성비 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/under-10000-won/): 재료비 합계(마트 가격 기준 추정)가 1만 원 이하인 레시피 125개를 싼 순서로 모았어요. 가장 저렴한 전자레인지 간장계란밥은 재료를 모두 사도 약 1,120원이에요. 가격은 대략값이라 사는 곳과 시기에 따라 달라질 수 있어요.
+- [20분 이내 빠른 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/quick-20-minutes/): 조리 시간이 20분 이내인 레시피 88개를 빠른 순서로 모았어요. 가장 빠른 원팬 계란 토스트는 약 5분이면 완성돼요. 조리 시간은 영상 내용을 바탕으로 정리한 값이에요.
 - [혼밥 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/honbap/): 혼밥 태그가 붙었거나 1인분 기준인 레시피 45개예요. 재료비를 인분으로 나눈 1인분 값이 싼 순서로 정렬했고, 가장 저렴한 전자레인지 달걀찜은 1인분 약 800원이에요. 인분을 바꾸면 앱에서 재료 양과 가격이 함께 바뀌어요.
 - [술안주 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/anju/): 술안주 태그가 붙은 레시피 44개를 유튜브 조회수 순으로 모았어요. 원작 영상 조회수가 가장 많은 레시피는 기사식당 스타일 제육볶음(추추의 한끼식사, 조회수 15,545,733회)이에요.
-- [다이어트 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/diet/): 다이어트·샐러드 태그가 있거나 1인분 추정 열량이 450kcal 이하인 레시피 110개를 열량이 낮은 순서로 모았어요. 가장 가벼운 백종원 깍두기 (1/3 분량)는 1인분 약 25kcal예요. 열량은 재료로 계산한 추정값이에요.
-- [해장·국물 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/haejang-soup/): 해장·국물요리 태그가 붙었거나 이름이 찌개·탕인 레시피 39개를 조회수 순으로 모았어요. 조리 시간은 5분부터 120분까지 다양해요.
+- [다이어트 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/diet/): 다이어트·샐러드 태그가 있거나 1인분 추정 열량이 450kcal 이하인 레시피 103개를 열량이 낮은 순서로 모았어요. 가장 가벼운 백종원 깍두기 (1/3 분량)는 1인분 약 25kcal예요. 열량은 재료로 계산한 추정값이에요.
+- [해장·국물 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/haejang-soup/): 해장·국물요리 태그가 붙었거나 이름이 찌개·탕인 레시피 37개를 조회수 순으로 모았어요. 조리 시간은 10분부터 120분까지 다양해요.
 - [면요리 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/noodles/): 파스타·국수 같은 면요리 레시피 22개를 조회수 순으로 모았어요.
 - [야식 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/late-night/): 야식 태그가 붙은 레시피 36개를 조회수 순으로 모았어요. 1인분 추정 열량은 300~920kcal예요.
-- [밑반찬·밥반찬 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/side-dishes/): 밑반찬·밥반찬 태그가 붙은 레시피 62개를 조회수 순으로 모았어요.
-- [도시락 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/lunchbox/): 식어도 맛있어서 도시락에 담기 좋은 레시피 13개를 조회수 순으로 모았어요. 김밥·주먹밥 같은 한 끼부터 계란말이·볶음 반찬까지 있어요.
+- [밑반찬·밥반찬 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/side-dishes/): 밑반찬·밥반찬 태그가 붙은 레시피 57개를 조회수 순으로 모았어요.
+- [도시락 레시피](https://kawaijin74-sudo.github.io/hanip-recipe/collections/lunchbox/): 식어도 맛있어서 도시락에 담기 좋은 레시피 12개를 조회수 순으로 모았어요. 김밥·주먹밥 같은 한 끼부터 계란말이·볶음 반찬까지 있어요.
 - [에어프라이어 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/air-fryer/): 에어프라이어로 만드는 레시피 6개를 조회수 순으로 모았어요. 기름을 적게 쓰고 굽는 동안 손이 비는 게 장점이에요. 온도·시간은 기기마다 조금씩 다르니 처음엔 중간에 한 번 확인하세요.
-- [전자레인지 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/microwave/): 불 없이 전자레인지로 만드는 레시피 12개를 조리 시간이 짧은 순서로 모았어요. 전자레인지용 그릇을 쓰고, 출력(W)에 따라 시간을 조금씩 조절하세요.
+- [전자레인지 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/microwave/): 불 없이 전자레인지로 만드는 레시피 11개를 조리 시간이 짧은 순서로 모았어요. 전자레인지용 그릇을 쓰고, 출력(W)에 따라 시간을 조금씩 조절하세요.
 - [연말 홈파티 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/home-party/): 연말·명절 손님상이나 홈파티에 내기 좋은 레시피 16개를 조회수 순으로 모았어요. 원작 영상 조회수가 가장 많은 레시피는 간장양념 LA갈비(백종원 PAIK JONG WON)이에요.
-- [두부 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/tofu/): 재료에 두부가 들어가는 레시피 24개를 조회수 순으로 모았어요. 남은 두부 한 모로 무엇을 할지 고를 때 참고하세요.
-- [돼지고기 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/pork/): 재료에 돼지고기가 들어가는 레시피 24개를 조회수 순으로 모았어요.
+- [두부 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/tofu/): 재료에 두부가 들어가는 레시피 22개를 조회수 순으로 모았어요. 남은 두부 한 모로 무엇을 할지 고를 때 참고하세요.
+- [돼지고기 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/pork/): 재료에 돼지고기가 들어가는 레시피 23개를 조회수 순으로 모았어요.
 - [닭고기 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/chicken/): 재료에 닭고기가 들어가는 레시피 12개를 조회수 순으로 모았어요.
 - [버섯 요리](https://kawaijin74-sudo.github.io/hanip-recipe/collections/mushroom/): 재료에 버섯이 들어가는 레시피 18개를 조회수 순으로 모았어요.
