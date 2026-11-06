@@ -1,7 +1,7 @@
 # 한입레시피 (공개 사이트)
 
 유튜브 요리 영상을 레시피(재료·양·추정 가격·단계별 영상 시점·팁·영양·태그)로 정리한 사이트입니다.
-주소: https://kawaijin74-sudo.github.io/
+주소: https://hanip-recipe.github.io/
 
 ## 이 저장소에 있는 것
 
@@ -52,18 +52,18 @@ node tools/seo.mjs
 ## 남은 수동 작업 (직접 로그인해서 해야 함)
 
 1. **구글 서치 콘솔** (https://search.google.com/search-console)
-   - 속성 추가 → "URL 접두어" 에 `https://kawaijin74-sudo.github.io/` 입력
+   - 속성 추가 → "URL 접두어" 에 `https://hanip-recipe.github.io/` 입력
    - 소유권 확인은 "HTML 파일" 방식이 쉽습니다: 받은 `google….html` 파일을 이 저장소 맨 위(루트)에 넣고 푸시한 뒤 "확인" (seo.mjs 는 이 파일을 건드리지 않습니다)
    - 왼쪽 "Sitemaps" 에 `sitemap.xml` 제출
    - "URL 검사" 에 레시피 페이지 주소를 넣고 "색인 생성 요청" 을 하면 더 빨리 잡힙니다
 2. **네이버 서치어드바이저** (https://searchadvisor.naver.com)
-   - 웹마스터 도구 → 사이트 등록에 `https://kawaijin74-sudo.github.io/` 입력
+   - 웹마스터 도구 → 사이트 등록에 `https://hanip-recipe.github.io/` 입력
    - 소유 확인은 "HTML 파일 업로드" 방식으로 받은 파일을 저장소 루트에 넣고 푸시
-   - 요청 → 사이트맵 제출에 `https://kawaijin74-sudo.github.io/sitemap.xml` 입력
+   - 요청 → 사이트맵 제출에 `https://hanip-recipe.github.io/sitemap.xml` 입력
 3. (선택) 빙 웹마스터 도구에서 구글 서치 콘솔 가져오기 — ChatGPT 검색이 빙 색인을 함께 씁니다.
 
 ### 알아 둘 점
 
-- 2026-11-06 저장소 이름을 `kawaijin74-sudo.github.io` 로 바꿔 사이트가 주소 맨 위에 있다. 그래서 `robots.txt` 가 효력이 있고, 네이버 서치어드바이저(호스트 단위만 받음)에도 등록할 수 있다. 옛 주소 `/hanip-recipe/` 는 끊겼다(색인 전이라 손해 없음).
+- 2026-11-06 저장소를 GitHub 조직 `hanip-recipe` 로 옮기고 이름을 `hanip-recipe.github.io` 로 바꿔 사이트가 주소 맨 위에 있다. 그래서 `robots.txt` 가 효력이 있고, 네이버 서치어드바이저(호스트 단위만 받음)에도 등록할 수 있다. 옛 주소 `/hanip-recipe/` 는 끊겼다(색인 전이라 손해 없음).
 - 유튜브 영상의 올린 날짜는 데이터에 없어서 구조화 데이터에 넣지 않았습니다(구글 검사 도구에서 "uploadDate 누락" 경고가 나올 수 있음). 지어낸 값을 넣지 않기 위해서입니다.
 - 가격·칼로리는 AI 추정값이라고 페이지에 표시합니다.
