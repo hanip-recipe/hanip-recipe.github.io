@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { creatorOf } from './creators.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SITE = 'https://hanip-recipe.github.io/';
@@ -384,7 +385,7 @@ ${hasCoupang ? `<p class="aff">${esc(AFF_BAND)}</p>\n` : ''}<p class="lead">${es
   <li>🔥 칼로리 <b>${n?.kcal ? `1인분 약 ${n.kcal}kcal` : '정보 없음'}</b>${n?.protein_g != null ? ` · 단백질 ${n.protein_g}g` : ''}</li>
 </ul>
 <div class="video"><a href="${ytWatch(id)}" target="_blank" rel="noopener" data-yt="${id}" aria-label="${esc(r.title)} 영상 재생 (유튜브)"><img src="${esc(r.thumb)}" alt="${esc(video.title)}" width="640" height="360"><span class="play">▶</span></a></div>
-<p class="note">원작: <a href="${ytWatch(id)}" target="_blank" rel="noopener">${esc(r.channel)} 유튜브 「${esc(video.title)}」</a>${video.views != null ? ` · 조회수 ${num(video.views)}회` : ''}${video.duration ? ` · 영상 길이 ${mmss(video.duration)}` : ''}. 영상은 유튜브 공식 플레이어로 재생되며 조회수와 수익은 원작자에게 돌아갑니다.</p>
+<p class="note">원작: <a href="${ytWatch(id)}" target="_blank" rel="noopener">${esc(r.channel)} 유튜브 「${esc(video.title)}」</a>${video.views != null ? ` · 조회수 ${num(video.views)}회` : ''}${video.duration ? ` · 영상 길이 ${mmss(video.duration)}` : ''}. 영상은 유튜브 공식 플레이어로 재생되며 조회수와 수익은 원작자에게 돌아갑니다.${creatorOf(r.channel) ? ` 한입레시피는 ${esc(creatorOf(r.channel))} 측과 관계없는 개인 사이트예요.` : ''}</p>
 <ul class="meta">${r.minutes ? `<li>⏱ ${r.minutes}분</li>` : ''}${(x.tools || []).map((t) => `<li>🍳 ${esc(t)}</li>`).join('')}</ul>
 
 <section class="box" id="ingredients"><h2>재료${r.servings ? ` <small style="color:var(--sub);font-weight:400;font-size:14px">${r.servings}인분</small>` : ''}</h2>

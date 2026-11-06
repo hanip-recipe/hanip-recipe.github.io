@@ -30,7 +30,8 @@ function toFile(url, fromFile) {
 export function check() {
   const errors = [], warnings = [];
   const files = walk(ROOT);
-  const htmls = files.filter((f) => f.endsWith('.html'));
+  // 검색엔진 소유 확인 파일(google*.html · naver*.html)은 페이지가 아니라 검사에서 뺀다
+  const htmls = files.filter((f) => f.endsWith('.html') && !/^(google|naver)[0-9a-z]+\.html$/.test(path.basename(f)));
   let ldCount = 0, linkCount = 0;
   const types = {};
 
