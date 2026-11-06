@@ -92,19 +92,19 @@ const COLLECTIONS = [
     test: (r) => r.minutes && r.minutes <= 20, sort: (a, b) => a.minutes - b.minutes || byViews(a, b),
     intro: (it) => `조리 시간이 20분 이내인 레시피 ${it.length}개를 빠른 순서로 모았어요. 가장 빠른 ${josa(it[0].title, '은', '는')} 약 ${it[0].minutes}분이면 완성돼요. 조리 시간은 영상 내용을 바탕으로 정리한 값이에요.` },
   { slug: 'honbap', emoji: '🍚', name: '혼밥 레시피', app: '#/c/SOLO',
-    test: (r) => tagHas(r, '혼밥') || r.servings === 1, sort: (a, b) => (perServing(a) ?? 1e9) - (perServing(b) ?? 1e9) || byViews(a, b),
-    intro: (it) => { const p = it.filter(perServing); return `혼밥 태그가 붙었거나 1인분 기준인 레시피 ${it.length}개예요.${p.length ? ` 재료비를 인분으로 나눈 1인분 값이 싼 순서로 정렬했고, 가장 저렴한 ${josa(p[0].title, '은', '는')} 1인분 약 ${won(perServing(p[0]))}이에요.` : ''} 인분을 바꾸면 앱에서 재료 양과 가격이 함께 바뀌어요.`; } },
+    test: (r) => tagHas(r, '혼밥'), sort: (a, b) => (perServing(a) ?? 1e9) - (perServing(b) ?? 1e9) || byViews(a, b),
+    intro: (it) => { const p = it.filter(perServing); return `혼밥 태그가 붙은 레시피 ${it.length}개예요.${p.length ? ` 재료비를 인분으로 나눈 1인분 값이 싼 순서로 정렬했고, 가장 저렴한 ${josa(p[0].title, '은', '는')} 1인분 약 ${won(perServing(p[0]))}이에요.` : ''} 인분을 바꾸면 앱에서 재료 양과 가격이 함께 바뀌어요.`; } },
   { slug: 'anju', emoji: '🍶', name: '술안주 레시피', app: '#/c/LATE',
     test: (r) => tagHas(r, '술안주'), sort: byViews,
     intro: (it) => `술안주 태그가 붙은 레시피 ${it.length}개를 유튜브 조회수 순으로 모았어요. 원작 영상 조회수가 가장 많은 레시피는 ${it[0].title}(${it[0].channel}, 조회수 ${num(it[0].views)}회)이에요.` },
   { slug: 'diet', emoji: '🥗', name: '다이어트 레시피', app: '#/c/DIET',
-    test: (r) => tagHas(r, '다이어트', '샐러드') || (r.kcal && r.kcal <= 450), sort: (a, b) => (a.kcal ?? 1e9) - (b.kcal ?? 1e9) || byViews(a, b),
-    intro: (it) => `다이어트·샐러드 태그가 있거나 1인분 추정 열량이 450kcal 이하인 레시피 ${it.length}개를 열량이 낮은 순서로 모았어요. 가장 가벼운 ${josa(it[0].title, '은', '는')} 1인분 약 ${it[0].kcal}kcal예요. 열량은 재료로 계산한 추정값이에요.` },
+    test: (r) => tagHas(r, '다이어트'), sort: (a, b) => (a.kcal ?? 1e9) - (b.kcal ?? 1e9) || byViews(a, b),
+    intro: (it) => `다이어트 태그가 붙은 레시피 ${it.length}개를 열량이 낮은 순서로 모았어요. 가장 가벼운 ${josa(it[0].title, '은', '는')} 1인분 약 ${it[0].kcal}kcal예요. 열량은 재료로 계산한 추정값이에요.` },
   { slug: 'haejang-soup', emoji: '🍲', name: '해장·국물 요리', app: '#/c/HANGOVER',
-    test: (r) => tagHas(r, '해장', '국물', '찌개') || r.tags.includes('국') || r.tags.includes('탕') || /찌개|(?<!그라)탕$/.test(r.title), sort: byViews,
-    intro: (it) => `해장·국물요리 태그가 붙었거나 이름이 찌개·탕인 레시피 ${it.length}개를 조회수 순으로 모았어요. 조리 시간은 ${Math.min(...it.filter((r) => r.minutes).map((r) => r.minutes))}분부터 ${Math.max(...it.filter((r) => r.minutes).map((r) => r.minutes))}분까지 다양해요.` },
+    test: (r) => tagHas(r, '해장', '국물요리'), sort: byViews,
+    intro: (it) => `해장·국물요리 태그가 붙은 레시피 ${it.length}개를 조회수 순으로 모았어요. 조리 시간은 ${Math.min(...it.filter((r) => r.minutes).map((r) => r.minutes))}분부터 ${Math.max(...it.filter((r) => r.minutes).map((r) => r.minutes))}분까지 다양해요.` },
   { slug: 'noodles', emoji: '🍜', name: '면요리 레시피', app: '#/c/NOODLE',
-    test: (r) => tagHas(r, '면요리') || /파스타|국수|라면|우동|소바|냉면|알리오/.test(r.title), sort: byViews,
+    test: (r) => tagHas(r, '면요리'), sort: byViews,
     intro: (it) => `파스타·국수 같은 면요리 레시피 ${it.length}개를 조회수 순으로 모았어요.` },
   { slug: 'late-night', emoji: '🌙', name: '야식 레시피', app: '#/c/LATE',
     test: (r) => tagHas(r, '야식'), sort: byViews,
@@ -289,9 +289,8 @@ function ingLine(i) {
   return q ? `${i.name} ${q}` : i.name;
 }
 function category(r) {
-  const map = [['국물', '국·찌개·탕'], ['해장', '국·찌개·탕'], ['국', '국·찌개·탕'], ['면요리', '면요리'], ['밑반찬', '반찬'], ['밥반찬', '반찬'], ['샐러드', '샐러드'], ['술안주', '술안주'], ['야식', '야식']];
+  const map = [['국물', '국·찌개·탕'], ['해장', '국·찌개·탕'], ['국', '국·찌개·탕'], ['면요리', '면요리'], ['한그릇', '한 그릇 요리'], ['밑반찬', '반찬'], ['밥반찬', '반찬'], ['샐러드', '샐러드'], ['술안주', '술안주'], ['야식', '야식']];
   for (const [w, c] of map) if (r.tags.some((t) => w === '국' ? t === w : t.includes(w))) return c;
-  if (/찌개|(?<!그라)탕$/.test(r.title)) return '국·찌개·탕';
   return r.tags[0] || '요리';
 }
 function faqs(r) {
