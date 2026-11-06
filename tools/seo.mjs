@@ -16,6 +16,9 @@ const SITE_DESC = '유튜브 인기 요리 영상을 재료·양·추정 가격�
 const AFF_NOTE = '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
 const AFF_BAND = '🛒 쿠팡 파트너스 링크가 있어요 — ' + AFF_NOTE;
 const MIN_COLLECTION = 3;
+// 문의 · 제보 구글 폼 (사용자 구글 계정 소유, 새 응답은 이메일 알림)
+const CONTACT_FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSc6QTvjOZEchlcJXtVMpvhQquZiaabg03vo4pvaVjrsL4yOWA/viewform';
+const CONTACT_LINE = `틀린 내용 제보 · 원작자 수정/삭제 요청은 <a href="${CONTACT_FORM}" target="_blank" rel="noopener">문의하기</a> — 원작자 요청은 확인 후 바로 반영해요.`;
 // 집에 보통 있는 기본 양념 (앱 index.html 의 BASIC·isBasic 과 같은 목록) — 장보기 박스에서 기본으로 체크 해제
 const BASIC = '소금 맛소금 후추 후춧가루 설탕 간장 진간장 국간장 양조간장 식용유 참기름 들기름 다진마늘 마늘 간마늘 고춧가루 고추장 된장 식초 물 깨 통깨 참깨 깨소금 미림 맛술 올리고당 물엿 굴소스'.split(' ');
 const isBasic = (n) => BASIC.some((b) => n === b || (b.length > 1 && n.endsWith(b))); // '물'은 콩나물과 헷갈리지 않게 그대로일 때만
@@ -263,6 +266,8 @@ ${extraHead}${jsonld.map(ld).join('\n')}
 ${body}
 </main>
 <footer>한입레시피 · 레시피 영상은 유튜브 공식 플레이어로 재생되며 조회수와 수익은 원작자에게 돌아갑니다.<br>
+레시피·분량·가격·칼로리는 유튜브 영상을 바탕으로 정리한 참고용 정보예요. 알레르기나 건강 상태에 맞는지는 직접 확인해 주세요.<br>
+${CONTACT_LINE}<br>
 ${AFF_NOTE}</footer>
 </body>
 </html>
