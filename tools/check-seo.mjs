@@ -8,7 +8,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SITE = 'https://kawaijin74-sudo.github.io/hanip-recipe/';
+const SITE = 'https://kawaijin74-sudo.github.io/';
 
 const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
   if (e.name === '.git' || e.name === 'node_modules') return [];
@@ -68,7 +68,7 @@ export function check() {
         for (const k of ['name', 'image', 'author', 'recipeIngredient']) if (!obj[k] || (Array.isArray(obj[k]) && !obj[k].length)) errors.push(`${name}: Recipe.${k} 없음`);
       }
       // JSON-LD 안의 우리 사이트 주소도 실제 파일이어야 한다
-      for (const [, u] of JSON.stringify(obj).matchAll(/"(https:\/\/kawaijin74-sudo\.github\.io\/hanip-recipe\/[^"]*)"/g)) {
+      for (const [, u] of JSON.stringify(obj).matchAll(/"(https:\/\/kawaijin74-sudo\.github\.io\/[^"]*)"/g)) {
         linkCount++;
         if (!toFile(u, f)) errors.push(`${name}: JSON-LD 주소 ${u} 에 해당하는 파일 없음`);
       }

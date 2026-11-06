@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SITE = 'https://kawaijin74-sudo.github.io/hanip-recipe/';
+const SITE = 'https://kawaijin74-sudo.github.io/';
 const SITE_NAME = '한입레시피';
 const SITE_DESC = '유튜브 인기 요리 영상을 재료·양·추정 가격·단계별 영상 시점·팁·영양까지 정리한 레시피 모음. 냉장고 재료로 찾고 장보기까지 한 번에.';
 const AFF_NOTE = '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
