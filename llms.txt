@@ -220,32 +220,42 @@
 - [전자레인지 치즈케이크 레시피](https://hanip-recipe.github.io/recipes/b3U2ksqB5BE/): 크림치즈에 설탕, 계란, 휘핑크림, 박력분, 레몬즙을 한 볼에서 섞어 전자레인지에 3분 돌린 뒤 차게 식히는 초간단 케이크. (10분 · 3인분 · 약 3,980원 · 355kcal · 원작 뚤기ddulgi)
 - [에어프라이어 군고구마 레시피](https://hanip-recipe.github.io/recipes/GT7tXc2y5x8/): 씻은 고구마를 180도에서 속까지 익힌 뒤 200도로 올려 한 번 더 구워 달고 진한 군고구마를 만든다. (85분 · 4인분 · 약 6,000원 · 330kcal · 원작 룰루요리 Lulu's cooking)
 - [전자레인지 어묵탕 레시피](https://hanip-recipe.github.io/recipes/xQhwxyuUmtw/): 전자레인지로 데운 뜨거운 물에 어묵을 담가 기름기를 뺀 뒤, 양파·청양고추와 물, 국간장을 넣고 다시 돌려 끓이는 간단 어묵탕. (12분 · 2인분 · 약 2,720원 · 190kcal · 원작 집나간아들 Runaway Son)
+- [짜장가루로 만드는 삼겹살 짜장국수 레시피](https://hanip-recipe.github.io/recipes/lNIYo-tmPw4/): 잘게 썬 삼겹살과 양파를 볶은 기름에 짜장가루를 볶고 물을 풀어 소스를 만든 뒤 삶은 면에 붓는 간단 짜장면. (15분 · 1인분 · 약 4,630원 · 780kcal · 원작 Making simple Korean food)
 - [에어프라이어 간장 닭날개 레시피](https://hanip-recipe.github.io/recipes/k2G8XvxPs4Y/): 우유에 담갔다 밑간한 닭날개를 160도에서 세 번 나눠 구우며 간장양념을 덧발라 촉촉하게 완성한다. (40분 · 3인분 · 약 10,390원 · 480kcal · 원작 후추식탁)
 - [정호영 차돌 된장 술밥 레시피](https://hanip-recipe.github.io/recipes/klFhbUssB60/): 차돌박이와 채소를 넣고 자작하게 끓인 된장찌개에 밥을 넣어 뚝배기에서 바글바글 끓여 먹는 술밥입니다. 밥반찬으로도 술안주로도 좋습니다. (25분 · 2인분 · 약 16,600원 · 650kcal · 원작 정호영의 오늘도 요리 Kitchen Caden)
+- [멸치칼국수 라면 알리오 올리오 레시피](https://hanip-recipe.github.io/recipes/PyH96Qvh6So/): 올리브유에 마늘과 새우를 볶아 향을 낸 뒤 삶은 멸치칼국수 라면과 스프 일부, 면수를 넣고 섞어 만드는 라면 파스타. (15분 · 2인분 · 약 6,510원 · 560kcal · 원작 성시경 SUNG SI KYUNG)
 - [김가루 들기름 막국수 레시피](https://hanip-recipe.github.io/recipes/WRiuAfLcp0A/): 찬물을 끼얹어 가며 삶은 메밀면에 간장 소스를 붓고, 김과 통깨를 믹서에 짧게 갈아 올린 뒤 들기름을 듬뿍 둘러 먹는 담백한 막국수. (20분 · 2인분 · 약 4,230원 · 640kcal · 원작 베지이즈 Vege is)
+- [대패삼겹 볶음김치칼국수 레시피](https://hanip-recipe.github.io/recipes/FBzs5q5SHcU/): 대패삼겹살 기름에 김치와 대파를 볶다가 물을 붓고 멸치칼국수 라면을 국물 없이 졸여 대패를 올리는 볶음 칼국수. (15분 · 1인분 · 약 4,800원 · 780kcal · 원작 Making simple Korean food)
 - [아보카도 명란 비빔밥 레시피](https://hanip-recipe.github.io/recipes/G8TqdAg7KSc/): 명란을 식초·참기름으로 무쳐 짠맛을 줄이고 아보카도·반숙 계란·어린잎을 듬뿍 올린 비빔밥. (10분 · 2인분 · 약 7,970원 · 560kcal · 원작 쿠키키친CookyKitchen)
+- [굴소스 고추장 우삼겹 애호박덮밥 레시피](https://hanip-recipe.github.io/recipes/eHKd3Ec4oRY/): 우삼겹을 볶다가 굵게 썬 애호박과 고추장·굴소스·설탕을 넣고 숨이 죽을 때까지 볶아 밥에 얹는 덮밥. (10분 · 2인분 · 약 8,250원 · 620kcal · 원작 Making simple Korean food)
 - [돼지고기 덮밥 레시피](https://hanip-recipe.github.io/recipes/iilOnDg63ko/): 다진 돼지고기를 양파·대파와 볶고 간장·굴소스·마요네즈로 졸여 밥에 올리는 5분 덮밥. (10분 · 2인분 · 약 5,020원 · 720kcal · 원작 혀기요리 HYUK2YORI)
 - [두부그라탕 레시피](https://hanip-recipe.github.io/recipes/23mDYISNuW4/): 전자레인지로 5분이면 완성되는 단백질 가득한 다이어트 두부 그라탕이다. 두부와 계란에 채소, 소스, 치즈를 더해 만든다. (10분 · 1인분 · 약 4,350원 · 420kcal · 원작 쿠킹조아 Cooking JoA)
+- [찜닭소스로 끓이는 삼겹살찜 레시피](https://hanip-recipe.github.io/recipes/NADL_xlWFjU/): 삼겹살과 감자에 시판 찜닭 양념과 고추장·고춧가루를 풀어 10분 끓이고 양파·대파를 넣어 자작하게 졸이는 간단 찜. (25분 · 2인분 · 약 9,550원 · 680kcal · 원작 Making simple Korean food)
+- [국물 없이 졸인 새우 볶음너구리 레시피](https://hanip-recipe.github.io/recipes/zQbAurjP2tc/): 새우와 양파를 볶다가 굴소스·고춧가루와 스프 반을 넣고 물을 부어 국물이 없어질 때까지 졸이는 볶음 라면. (10분 · 1인분 · 약 4,100원 · 650kcal · 원작 Making simple Korean food)
+- [튀김가루물로 굽는 눈꽃만두 레시피](https://hanip-recipe.github.io/recipes/OVm0nNI4X5I/): 팬에 둥글게 놓은 냉동만두에 튀김가루 물을 붓고 쪄 낸 뒤 수분을 날려 바닥에 얇은 눈꽃 모양 튀김옷을 만드는 군만두. (10분 · 2인분 · 약 4,300원 · 420kcal · 원작 성시경 SUNG SI KYUNG)
+- [갈비양념 졸인 계란프라이 덮밥 레시피](https://hanip-recipe.github.io/recipes/fPiK27xz1wA/): 기름에 바삭하게 튀기듯 부친 계란프라이에 간장·맛술·돼지갈비 양념을 부어 약불에 끈적하게 졸여 밥에 올리는 덮밥. (10분 · 1인분 · 약 2,970원 · 640kcal · 원작 Runaway Son)
+- [미역국 부어 끓인 치즈 불닭죽 레시피](https://hanip-recipe.github.io/recipes/hPPF0f39Kxc/): 즉석 소고기 미역국에 불닭볶음탕면 스프와 부순 면, 밥을 넣고 끓인 뒤 모차렐라 치즈로 덮는 매콤한 한 그릇 죽. (10분 · 1인분 · 약 6,000원 · 850kcal · 원작 Making simple Korean food)
 - [간장 파스타 레시피](https://hanip-recipe.github.io/recipes/DHPH8qWSqhQ/): 간장·참기름·설탕 3가지로 만든 소스를 베이컨·마늘 볶음에 버무리는 혼밥 파스타. (15분 · 1인분 · 약 2,500원 · 650kcal · 원작 냠냠간단요리-Yum Yum Easy Meal)
+- [맹물에 안 불리는 오독오독 무말랭이무침 레시피](https://hanip-recipe.github.io/recipes/k00AUB0_SfQ/): 무말랭이를 가볍게 헹군 뒤 맹물 대신 간장·미림·올리고당 양념물에 1시간 불려 무맛을 지키고 고춧가루·마늘·액젓으로 무치는 밑반찬. (75분 · 4인분 · 약 10,500원 · 190kcal · 원작 요리왕비룡 셰프TV )
 - [다이어트 오꼬노미야끼 레시피](https://hanip-recipe.github.io/recipes/f3SrYc1v0zc/): 양배추를 듬뿍 넣어 만든 저탄수화물 오꼬노미야끼입니다. 익힌 양배추와 생양배추를 함께 먹는 구성이라 포만감이 좋습니다. (15분 · 1인분 · 약 7,070원 · 250kcal · 원작 다이어트 요리하는 호수 ᄋ u ᄋ)
 - [상추샐러드 레시피](https://hanip-recipe.github.io/recipes/jTBhQS4FyNI/): 불을 쓰지 않고 상추, 레몬즙에 절인 오이, 방울토마토를 생들기름 마늘 드레싱에 버무려 먹는 간단한 샐러드입니다. (30분 · 2인분 · 약 9,650원 · 130kcal · 원작 영건쿡 l 설탕 없는 집밥 연구소)
 
 ## 모음글
 
-- [만원 이하 가성비 레시피](https://hanip-recipe.github.io/collections/under-10000-won/): 재료비 합계(마트 가격 기준 추정)가 1만 원 이하인 레시피 153개를 싼 순서로 모았어요. 가장 저렴한 전자레인지 간장계란밥은 재료를 모두 사도 약 1,120원이에요. 가격은 대략값이라 사는 곳과 시기에 따라 달라질 수 있어요.
-- [20분 이내 빠른 요리](https://hanip-recipe.github.io/collections/quick-20-minutes/): 조리 시간이 20분 이내인 레시피 101개를 빠른 순서로 모았어요. 가장 빠른 원팬 계란 토스트는 약 5분이면 완성돼요. 조리 시간은 영상 내용을 바탕으로 정리한 값이에요.
-- [혼밥 레시피](https://hanip-recipe.github.io/collections/honbap/): 혼밥 태그가 붙은 레시피 53개예요. 재료비를 인분으로 나눈 1인분 값이 싼 순서로 정렬했고, 가장 저렴한 전자레인지 달걀찜은 1인분 약 800원이에요. 인분을 바꾸면 앱에서 재료 양과 가격이 함께 바뀌어요.
-- [술안주 레시피](https://hanip-recipe.github.io/collections/anju/): 술안주 태그가 붙은 레시피 55개를 유튜브 조회수 순으로 모았어요. 원작 영상 조회수가 가장 많은 레시피는 기사식당 스타일 제육볶음(추추의 한끼식사, 조회수 15,545,733회)이에요.
+- [만원 이하 가성비 레시피](https://hanip-recipe.github.io/collections/under-10000-won/): 재료비 합계(마트 가격 기준 추정)가 1만 원 이하인 레시피 162개를 싼 순서로 모았어요. 가장 저렴한 전자레인지 간장계란밥은 재료를 모두 사도 약 1,120원이에요. 가격은 대략값이라 사는 곳과 시기에 따라 달라질 수 있어요.
+- [20분 이내 빠른 요리](https://hanip-recipe.github.io/collections/quick-20-minutes/): 조리 시간이 20분 이내인 레시피 109개를 빠른 순서로 모았어요. 가장 빠른 원팬 계란 토스트는 약 5분이면 완성돼요. 조리 시간은 영상 내용을 바탕으로 정리한 값이에요.
+- [혼밥 레시피](https://hanip-recipe.github.io/collections/honbap/): 혼밥 태그가 붙은 레시피 60개예요. 재료비를 인분으로 나눈 1인분 값이 싼 순서로 정렬했고, 가장 저렴한 전자레인지 달걀찜은 1인분 약 800원이에요. 인분을 바꾸면 앱에서 재료 양과 가격이 함께 바뀌어요.
+- [술안주 레시피](https://hanip-recipe.github.io/collections/anju/): 술안주 태그가 붙은 레시피 57개를 유튜브 조회수 순으로 모았어요. 원작 영상 조회수가 가장 많은 레시피는 기사식당 스타일 제육볶음(추추의 한끼식사, 조회수 15,545,733회)이에요.
 - [다이어트 레시피](https://hanip-recipe.github.io/collections/diet/): 다이어트 태그가 붙은 레시피 41개를 열량이 낮은 순서로 모았어요. 가장 가벼운 백종원 깍두기 (1/3 분량)는 1인분 약 25kcal예요. 열량은 재료로 계산한 추정값이에요.
-- [해장·국물 요리](https://hanip-recipe.github.io/collections/haejang-soup/): 해장·국물요리 태그가 붙은 레시피 43개를 조회수 순으로 모았어요. 조리 시간은 10분부터 240분까지 다양해요.
-- [면요리 레시피](https://hanip-recipe.github.io/collections/noodles/): 파스타·국수 같은 면요리 레시피 27개를 조회수 순으로 모았어요.
-- [야식 레시피](https://hanip-recipe.github.io/collections/late-night/): 야식 태그가 붙은 레시피 35개를 조회수 순으로 모았어요. 1인분 추정 열량은 300~1050kcal예요.
-- [밑반찬·밥반찬 레시피](https://hanip-recipe.github.io/collections/side-dishes/): 밑반찬·밥반찬 태그가 붙은 레시피 64개를 조회수 순으로 모았어요.
-- [도시락 레시피](https://hanip-recipe.github.io/collections/lunchbox/): 식어도 맛있어서 도시락에 담기 좋은 레시피 51개를 조회수 순으로 모았어요. 김밥·주먹밥 같은 한 끼부터 계란말이·볶음 반찬까지 있어요.
+- [해장·국물 요리](https://hanip-recipe.github.io/collections/haejang-soup/): 해장·국물요리 태그가 붙은 레시피 44개를 조회수 순으로 모았어요. 조리 시간은 10분부터 240분까지 다양해요.
+- [면요리 레시피](https://hanip-recipe.github.io/collections/noodles/): 파스타·국수 같은 면요리 레시피 31개를 조회수 순으로 모았어요.
+- [야식 레시피](https://hanip-recipe.github.io/collections/late-night/): 야식 태그가 붙은 레시피 41개를 조회수 순으로 모았어요. 1인분 추정 열량은 300~1050kcal예요.
+- [밑반찬·밥반찬 레시피](https://hanip-recipe.github.io/collections/side-dishes/): 밑반찬·밥반찬 태그가 붙은 레시피 66개를 조회수 순으로 모았어요.
+- [도시락 레시피](https://hanip-recipe.github.io/collections/lunchbox/): 식어도 맛있어서 도시락에 담기 좋은 레시피 53개를 조회수 순으로 모았어요. 김밥·주먹밥 같은 한 끼부터 계란말이·볶음 반찬까지 있어요.
 - [에어프라이어 요리](https://hanip-recipe.github.io/collections/air-fryer/): 에어프라이어로 만드는 레시피 7개를 조회수 순으로 모았어요. 기름을 적게 쓰고 굽는 동안 손이 비는 게 장점이에요. 온도·시간은 기기마다 조금씩 다르니 처음엔 중간에 한 번 확인하세요.
 - [전자레인지 요리](https://hanip-recipe.github.io/collections/microwave/): 불 없이 전자레인지로 만드는 레시피 12개를 조리 시간이 짧은 순서로 모았어요. 전자레인지용 그릇을 쓰고, 출력(W)에 따라 시간을 조금씩 조절하세요.
 - [연말 홈파티 요리](https://hanip-recipe.github.io/collections/home-party/): 연말·명절 손님상이나 홈파티에 내기 좋은 레시피 21개를 조회수 순으로 모았어요. 원작 영상 조회수가 가장 많은 레시피는 백종원 명절 모둠전 (동태·육전·새우)(백종원 PAIK JONG WON)이에요.
 - [두부 요리](https://hanip-recipe.github.io/collections/tofu/): 재료에 두부가 들어가는 레시피 24개를 조회수 순으로 모았어요. 남은 두부 한 모로 무엇을 할지 고를 때 참고하세요.
-- [돼지고기 요리](https://hanip-recipe.github.io/collections/pork/): 재료에 돼지고기가 들어가는 레시피 27개를 조회수 순으로 모았어요.
+- [돼지고기 요리](https://hanip-recipe.github.io/collections/pork/): 재료에 돼지고기가 들어가는 레시피 30개를 조회수 순으로 모았어요.
 - [닭고기 요리](https://hanip-recipe.github.io/collections/chicken/): 재료에 닭고기가 들어가는 레시피 18개를 조회수 순으로 모았어요.
 - [버섯 요리](https://hanip-recipe.github.io/collections/mushroom/): 재료에 버섯이 들어가는 레시피 25개를 조회수 순으로 모았어요.
